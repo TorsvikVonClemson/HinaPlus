@@ -1,10 +1,7 @@
-import discord
-import asyncio
 import os
 import fnmatch
 import random
 
-client = discord.Client()
 
 def sort(x,author):
     active=0
@@ -13,13 +10,13 @@ def sort(x,author):
 
     file = "/interactables/rhunefaust/saves/{}.txt"
     path = os.getcwd() + file
+    authpath=path.format(author)
 
 
     active=find(str(author) + '.txt', os.getcwd()+'/interactables/rhunefaust/saves/')
 
     if x.startswith('begin') and (active == 0):
-        CurrentSpeed=question
-        with open(path.format(author), "w") as text_file:
+        with open(authpath, "w") as text_file:
             text_file.write('Move Speed: {}\n'.format(0))
             text_file.write('Current Distance: 0\n')
             text_file.write('Date: 0:00\n')
@@ -33,7 +30,7 @@ def sort(x,author):
     elif x.startswith('next') and (active == 1):
         n=[]
 
-        with open(path.format(author), "r") as text_file:
+        with open(authpath, "r") as text_file:
             workingfile=text_file.readlines()
         text_file.close()
 
@@ -52,19 +49,13 @@ def sort(x,author):
 
         distance=(workingfile[1].lstrip('Current Distance: '))
         distance = int(distance.rstrip('\n'))
-
         distance=distance+displacement*n[1]
-
-        workingfile[1]='Current Distance: {}\n'.format(distance)
+        update(authpath,1,'Current Distance: {}\n'.format(distance))
 
         currenttime=workingfile[2].lstrip('Date: ')
         currenttime=currenttime.rstrip('\n')
         currenttime=clock(currenttime,timeinterval)
-        workingfile[2]='Date: '+currenttime+'\n'
-
-        with open(path.format(author), "w") as text_file:
-            text_file.writelines(workingfile)
-        text_file.close()
+        update(authpath,2,'Date: {}\n'.format(currenttime))
 
         biome = "/interactables/rhunefaust/BenignForest/{}.txt"
         biomepath = os.getcwd() + biome
@@ -80,12 +71,13 @@ def sort(x,author):
         x=x.lstrip('speed')
         x=x.replace(' ','')
         if x.isdigit():
+            update(authpath,0,'Move Speed: {}\n'.format(x))
             x='Party speed set to: '+str(x)
         else:
             x='Last time I checked you can only move at positive integers.'
 
     elif x.startswith('close'):
-        os.remove(path.format(author))
+        os.remove(authpath)
         x='Run Deleted!'
 
     else:
@@ -108,3 +100,12 @@ def clock(currenttime,timeinterval):
     hm[0]=str(int(hm[0])+int(int(hm[1])/60))
     hm[1]=str(int(hm[1])%60)
     return str(hm[0])+':'+str(hm[1])
+
+def update(authpath,line,update):
+    with open(authpath, "r") as text_file:
+        workingfile = text_file.readlines()
+    text_file.close()
+    workingfile[line]=update
+    with open(authpath, "w") as text_file:
+        text_file.writelines(workingfile)
+    text_file.close()
