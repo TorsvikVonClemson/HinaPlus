@@ -1,0 +1,43 @@
+Street Urchin
+	Pick Pockets
+	Open Locks
+Pick Pocket
+	Pick Pockets
+	Move Silently
+Beggar
+	Pick Pockets
+	Detect Noise
+Infiltrator
+	Open Locks
+	Climb Walls
+Thug
+	Open Locks
+	Hide in Shadows
+Bandit
+	Open Locks
+	Move Silently
+Lock Smith
+	Open Locks 
+	Find/Remove Traps
+Spelunker
+	Find/Remove Traps
+	Read Languages
+Saboteur
+	Open Locks
+	Find Remopve Traps
+Assassin
+	Move Silently
+	Hide in Shadows
+Scout
+	Move Silently
+	Detect Noise
+Spy
+	Move Silently
+	Climb Walls
+Bounty Hunter
+	Hide in Shadows
+	Detect Noise
+Burglar
+	Hide in Shadows
+	Climb Walls
+

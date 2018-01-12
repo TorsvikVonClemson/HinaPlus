@@ -1,0 +1,14 @@
+Street Urchin
+Pick Pocket
+Beggar
+Infiltrator
+Thug
+Bandit
+Lock Smith
+Spelunker
+Saboteur
+Assassin
+Scout
+Spy
+Bounty Hunter
+Burglar

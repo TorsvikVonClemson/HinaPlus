@@ -1,0 +1,2 @@
+~~~Awl Pike~~~
+If an action is prepared to recieve a charge it deals double damage on hit.

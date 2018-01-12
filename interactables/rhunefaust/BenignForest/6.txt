@@ -1,0 +1,11 @@
+Major Animal Handling Treasure
+
+You enter a glade sparse of trees, you spot 1 horse (see below) grazing. They seem undisturbed by the party.
+
+ANIMAL HANDLING identifies the horses as having wandered away from the herd while being led and the owner may still be near by. The horses can be led back to the herd the farmer giving full compensation for the effort.
+
+1. Riding Horse 7 Gold
+2. Draft Horse 20 Gold
+3. Light War Horse 15 Gold
+4. Medium War Horse 22 Gold
+5. Heavy War Horse 40 Gold

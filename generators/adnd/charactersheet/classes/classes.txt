@@ -1,0 +1,74 @@
+Class
+    Human
+        40% Fighter
+            5% Paladin
+            5% Ranger
+        30% Rogue
+            10% Bard
+        20% Cleric
+            -Roll god as a list
+        10% Wizard
+            -Roll Spec as list
+    HalfElf
+        40% Fighter
+            10% Ranger
+        40% Rogue
+            20% Bard
+        10% Cleric
+        10% Wizard
+    Dwarf
+        40% Fighter
+            5% Paladin
+        30% Rogue
+            10% Bard
+        30% Cleric
+            -Roll god as a list
+    Halfling
+        30% Fighter
+        40% Rogue
+        20% Cleric
+        10% Wizard
+
+    --------------
+    Uncommon Races
+    --------------
+    Wood Elf
+        25% Fighter
+        25% Barbarian/Witchhunter
+        25% Rogue
+            50% Bard
+        25% Druid
+    Orc Merchant
+        25% Fighter
+        30% Barbarian
+        25% Rogue
+        15% Cleric
+        5% Shaman
+    Goblin Merchant
+        5% Fighter
+        15% Barbarian
+        30% Rogue
+        25% Cleric
+        25% Shaman
+    Kobold Pilgrim
+        20% Fighter
+        50% Rogue
+        30% Priest
+    Foriegner
+        (Needs expansion, probably same as human but with additional traits)
+    --------------
+    Uncommon Races
+    --------------
+    Oni
+        100% Fighter/Sorcerer
+    Elven Spy
+        40% Fighter
+        30% Rogue
+        30% Wizard
+    Drow Refugee
+        50% Fighter
+        50% Rogue
+    Furbolg
+        100% Fighter
+    Ogre
+        100% Fighter

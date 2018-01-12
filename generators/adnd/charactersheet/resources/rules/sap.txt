@@ -1,0 +1,6 @@
+~~~Sap~~~
+75% of all damage is non-leathal. The most effective way to use a sap is to make a called shot head (-8). On a successful called shot
+there is a 5% chance for every damage delt that the opponened is knocked unconcious up to 40%. Chance to knockout is increased to 
+10% per damage up to 80% if the target is helpless. Due to these difficult rolls if you plan on going for the knockout you should
+use a sneak attack on a helmet-less opponent (10 AC, flatfoot, +4 atk adj) and even still be prepared with a backup plan. The other
+option is to incapacitate the opponent with sleep, rope, prarlysis, etc and perform a coup-de-grace for easier transport of prisioners.

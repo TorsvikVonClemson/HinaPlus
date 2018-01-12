@@ -1,0 +1,3 @@
+~~~Military Fork~~~
+A weapon improvised from a pitchfork. Deals double damage when used in a charge against large creatures. Can be used to grab distant
+objects or as a piton to climb walls.

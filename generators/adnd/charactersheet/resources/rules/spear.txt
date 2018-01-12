@@ -1,0 +1,2 @@
+~~~Spears~~~
+Spears are 1.5 handed. When wielded in a two handed style it can be set to recieve a charge for double damage.

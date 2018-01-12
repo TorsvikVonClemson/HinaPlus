@@ -1,0 +1,13 @@
+6000RapierMStrStr1D6+1/1D8+1MeleeP44Parrying DaggerMStrStr1D3/1D3Str: 10
+Hit Adj: 0
+Dmg Adj: 0
+Weight Allowed:40
+Max Press: 115
+Open Door:6
+Bend Bar Lift Gate: 2%
+Dex: 13
+Con: 17
+Int: 13
+Wis: 9
+Cha: 13
+5

@@ -1,0 +1,2 @@
+~~~Ranseur~~~
+Deals double damage when set to recieve a charge. On a called shot -4 can be used to disarm an opponent or ignore armour bonuses.

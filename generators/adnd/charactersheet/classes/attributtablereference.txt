@@ -1,0 +1,35 @@
+-Strength Based-
+0 Hit Prob
+1 Damage Adj
+2 Weight Allowed
+4 Max Press
+5 Open Doors
+6 Bend Bars Lift Gates
+
+-Dex Based-
+7 Reaction Adj
+8 Missile Atk Adj
+9 Defensive Adj
+
+-Con Based-
+10 Hit Point Adj
+11 System Shock
+12 Ressurection Survival
+13 Poison Save
+14 Regen
+
+-Int Based-
+15 Max Spell
+16 Chance to Learn Spell
+17 Max Spell per Level
+18 Illusion Immune
+
+-Wis Based-
+19 Magical Defense Adj
+20 Bonus Spells
+21 Chance of Spell Failure
+
+-Charisma Based-
+22 Maximum # of Henchmen
+23 Loyalty Base
+24 Reaction Adj

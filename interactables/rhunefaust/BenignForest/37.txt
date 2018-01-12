@@ -1,0 +1,5 @@
+Minor Dancing Treasure
+
+You encounter a band of humans, likely bandits based on their attire.
+
+Should you speak to them, they seem mostly bored and want entertainment. Someone with the DANCING skill may attempt to entertain them. They will throw 10 gold per value thier roll beat their skill by. Other forms of entertainment will only provide half.

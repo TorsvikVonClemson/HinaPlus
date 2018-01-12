@@ -1,0 +1,5 @@
+Carpentry Trap
+
+You encounter a section of wall that was once part of a mansion that fell over 100 years ago. Whats more impressive than the fact that this wall still stands but on the inner side there is an engraving into the wood depicting an ancient battle, protected from weather by a still intact outcropping of celing.
+
+The engraving can be removed by someone with the Carpentry skill however it will be revealed as load bearing if the player passes by 5. All players aiding to remove the piece will be caught under the falling outcropping, 1d10 dmg. No Save.

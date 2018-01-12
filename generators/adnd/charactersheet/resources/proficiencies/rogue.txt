@@ -1,0 +1,17 @@
+Ancient History:Int-1
+Appraise:Int
+Blind-Fighting:
+Disgiuse:Cha-1
+Forgery:Dex-1
+Gaming:Cha
+Gem Cutting:Dex-2
+Juggling:Dex-1
+Jumping:Str
+Local History:Cha
+({RacialMusic}):Dex-1
+Reading Lips:Int-2
+Set Snares:Dex-1
+Tightrope Walking:Dex
+Tumbling:Dex
+Ventriloquism:Int-2
+Begging:Cha

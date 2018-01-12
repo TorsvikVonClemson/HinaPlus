@@ -1,0 +1,10 @@
+Ancient History:Int-1
+Astrology:Int
+Engineering:Int-3
+Gem Cutting:Dex-2
+Herbalism:Int-2
+Language {Ancient}:Int
+Navigation:Int-2
+Literacy:Int+1
+Religion:Wis
+Spellcraft:Int-2

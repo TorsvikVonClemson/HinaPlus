@@ -1,0 +1,12 @@
+Ancient History:Int-1
+Astrology:Int
+Engineering:Int
+Healing:Wis-2
+Herbalism:Wis-2
+Language{Ancient}:Int
+Local History:Cha
+({RacialMusic}):Dex-1
+Navigation:Int-2
+Literacy:Int+1
+Religion:Wis
+Spellcraft:Int-2

@@ -1,0 +1,12 @@
+~~~Lasso~~~
+Every attack requires a called shot. Legs forces the opponent to make a DEX check to escape or trip. Called shot arms forces the opponent
+to make a STR check or be pinned, dis arming the opponent and giving a -4 to escape. Additional lassos are cumulative. An attempted
+dismount does not require a called shot but you must make a contest of STR with the rider. If you win, the rider is dismounted and 
+takes 1D3 dmg. If you lose, you hold of the rope and take 1D2 dmg as you are yanked foreward. Both results happen on a tie. If you
+had the foresight to tie the rope to a stationary object the rider must make a Bend Bars/Lift Gates to break the rope. If you make
+a called shot head you can yank for 1D3+Str dmg on the first round and 1+Str on each subsequent round. If you ar in a situation where
+you can lift you opponent, say you hide in a tree and lift up an unsuspecting guard, You will cause 1D4 strangulation dmg per round.
+Finally you can attempt to make a called shot head against a mounted rider. Make all of the checks mentioned before. If you lose the
+Str contest the rider takes 1D4 and you take 1D2. If you win, you cause 3D6 dmg. Rope Use gives an additional +2 to hit.
+
+There are alot of rules for the lasso and they are difficult to pull of but are extremely effective manuvers when successful.

@@ -1,0 +1,7 @@
+Guarded Carpentry Treasure
+
+Wandering through the woods you encounter a lone wood elf, he seems highly distracted.
+
+The wood elf does not speak Faustic and is polishing a wooden art object. Next to him is an untouched block of wood. If someone using CARPENTRY+5 creates a duplicate he will be impressed giving the player a copy of the craft which functions at a Idol of Neutrality. Failure enrages the elf and he will curse the player with Arcane Ataxia.
+
+Idol of Neutrality: Holding this item in one hand creates a 10' bubble around the weilder that neutralises all magic. Spells that enter the bubble dissolves into a thick humid magical mist that harmlessly settles to the ground. (collecting the mist acts as 1/3 of the spells level)

@@ -1,0 +1,4 @@
+~~~Whip~~~
+Can disarm with a -4 called shot. When using a whip you can attepmt to entangle your opponent without the use of a called shot. The
+player must fist declare what part they whish to entangle. 50% for one limb, 10% for two, 20% for head. Add 5% for each level of experience.
+To escape make a contested STR roll, if the defender wins they take the whip. Called shot head does 1D3 strangulation dmg per round.

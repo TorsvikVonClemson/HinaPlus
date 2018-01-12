@@ -1,0 +1,5 @@
+~~~Net~~~
+A netted character needs to make a STR check to escape. After the opponent is captured, the attacke can spend each round wrapping 
+the net reducing STR by 4 each round. A net must be properly folded to be used effectively. Throwing the net unfolds it and remains
+so until combat ends and the player takes time to fold it again. An unfolded net can still be used but at a -3 to attack rolls. A
+player can also use a folded nety to perform Parry and Disarms.

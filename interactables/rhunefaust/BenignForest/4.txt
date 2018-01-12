@@ -1,0 +1,10 @@
+Guarded Agricultureal Treasure
+
+You arrive in a clearing full of low growing flowers and weeds.
+
+        * * *
+AGRICULTURE identifies one of several (see below) foods. They are easily mistaken for edible food but are very deadly if eaten. Instead with HERBALISM, HEALING, SURVIVAL, AGRICULTURE+5 the plant can be made into a potent poison.
+
+1. Blue Pomegranite -> Death by Asphyxiation when consumed. (Death Poison)
+TODO: add more
+        * * *

@@ -1,0 +1,17 @@
+~~~Defensive Options~~~
+
+--Full Defense--
+If you have a shield or cover (a bush, corner of a wall, book, get creative) you can go full defense by giving up all actions. The amount 
+of defense gained is based on the amount of your body is concealed. The scale also takes into account soft cover (a bush) vs hard cover (a 
+tree tunk). Bonuses are applied as such; -2/-1 for 25% cover, -4/-2 for 50%, -7/-3 for 75%, -10/-4 for 90%. Players also often forget that 
+full defense also works on SAVING THROWS. You can go full defense to try and protect yourself from a fireball, lightning bolt or dragons 
+breath. If you have 90% concealment all damage is reduced by an additional 1/2 even on a successful hit!This means a fighter with a body 
+shield could reduce an Adult Red Dragon's fire breath from a devestating 18-126 Dmg to a manageable 5-32.
+
+--Parrying--
+If you are attacked you can give up one of you attacks to try to parry. When you choose to parry a blow you gain an AC bonus of half your 
+level, +1 more if you're a fighter. Parrying with a shield smaller than a body shield provides an additional +2 bonus. If you have a weapon 
+with reach you can parry attack on other members of the party. Parrying can be very useful in situations where the party is surrounding a 
+single large creature such as a troll. Only able to attack one player at a time, said player can focus on parrying to negate its attack 
+completly. Just keep in mind if you move before the opponent to ask DM who its attacking so you don't use up your attacks. Some weapons 
+can disarm on a parry with a -8 to attack.

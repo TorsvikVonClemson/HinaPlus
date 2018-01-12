@@ -1,0 +1,22 @@
+
+Gender M:F
+    Human 3:1
+    Half-Elf 2:1
+    Dwarf 99:1
+    Halfling 3:1
+    --------------
+    Uncommon Races
+    --------------
+    Wood Elf 1:1
+    Orc Merchant Nil
+    Goblin Merchant Nil
+    Kobold Nil
+    Foreigner 3:1
+    ----------
+    Rare Races
+    ----------
+    Oni 9:1
+    Elven Spy 1:1
+    Drow Refugee 0:1
+    Furbolg 10:1
+    Ogre 1:0

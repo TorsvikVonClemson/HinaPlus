@@ -1,0 +1,6 @@
+~~~Caltrops~~~
+Dropping caltrops creates a 5'X5' trap square. Entering characters must make a save vs paralysis. Failure means 1D4 damage and a second
+save vs paralysis mus be rolled. If the second roll fails the character is lame for the next 24 hrs, moves at 1/3 speed and cannot 
+move until the caltrop is removed. Success means the character moves at 1/2 speed untill the caltrop is removed. Caltrops work great
+when making quick getaways or even to lure pursuing enemies into a trap. An all ranged party could easily trick a group of enemies 
+into pursuit and pepper the now crippled group with arrows, unable to advance properly or escape.

@@ -1,0 +1,28 @@
+Agriculture:Int
+Animal Handling:Wis-1
+Animal Training:Wis
+Artistic Ability {}:Wis
+Blacksmithing:Str
+Brewing:Int
+Carpentry:Str
+Cobbling:Dex
+Cooking:Int
+Dancing:Dex
+Direction Sense:Wis+1
+Etiquette:Cha
+Fire-Building:Wis-1
+Fishing:Wis-1
+Heraldry:Int
+Language ({Modern}):Int
+Leatherworking:Int
+Mining:Wis-3
+Pottery:Dex-2
+Riding Land (Horse):Wis+3
+Rope Use:Dex
+Seamanship:Dex+1
+Tailor:Dex-1
+Singing:Cha
+Stonemasonry:Str-2
+Swimming:Str
+Weather Sense:Wis-1
+Weaving:Int-1

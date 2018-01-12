@@ -1,0 +1,2 @@
+~~~Parrying Dagger~~~
+If used to successfully parry you can attemt to break the opponents weapon with a STR check

@@ -1,0 +1,11 @@
+Orc
+Kobold
+Goblin
+Bandit
+Lizardman
+{gang}
+Dwarf
+Wood Elf
+Gnoll
+Ninja
+Gypsie

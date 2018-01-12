@@ -1,0 +1,11 @@
+Mother
+Father
+Brother
+Sister
+Lover
+Spouse
+Friend
+Son
+Daughter
+Fiance
+Mentor

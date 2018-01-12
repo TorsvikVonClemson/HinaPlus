@@ -1,0 +1,6 @@
+~~~Scourge~~~
+The scourge actually is a poor weapon but the damage it does cause is designed to be excruciatingly painful. Its designed like barbed
+wire to yank and tear the skin causing anyone hurt with it to make an immediate fear check. Unlike normal morale checks only the one
+hurt needs to take the check. If the character doesnt have morale (PCs) the check is roll 1D20 + CON mod, roll above the damage done. 
+Fear in this case is not base in intimidation from the opponent but the reflex to escape the pain. The PC doesn't necessarily run away
+but they will be left flat-footed as they recoil in pain.

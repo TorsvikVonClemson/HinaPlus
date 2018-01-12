@@ -1,0 +1,38 @@
+~~~Reaction Adjustment~~~
+
+Wait, you thought Charisma was a dump stat?
+
+---But what is it?---
+You may have noticed at some point the stat "Reaction Adj." on your character sheet. This is the stat that allows you to influence people's 
+opinion of you. Theres multiple reasons as to why this mechanic is underused. There is little to no information about it in the PHB, the
+"Hackmaster" approach to table top gaming and in the DMG it uses a pre-THAC0 wargame style table. (Do a quick search for "Warhammer
+Toughness Chart" if you don't know what I'm on about) Add to the mix that the mechanic is supposed to be kept hidden from the player and
+you have the recipe for a mechanic that DMs never employ and players never know to ask for. The part where this falls apart is that 
+players were expected to negotiate out of a good number of encounters which then requires the DM to fudge a massive number of rolls to 
+minimize death from attrition. 3rd edition AD&D and later tried to alleviate this problem by adding Bluff and Diplomacy checks. Problem 
+with these is that they directly interfere with actual roleplaying due to the "But my charactersheet and dice said I pass" problem and 
+devolves into, "I crit so they believe everything I say" which only gets nastier as players inevitably start using Bluff checks on each 
+other. But whats my solution? Tell the players how it works and encourage them to abuse the system.
+
+---So how does it work---
+Reaction Adjustment serves two purposes. The first less common one is to avoid being suprised due to chance encounter. Basically if two
+parties bump into each other accidentally its your save to not be surprised. 
+
+The second method is to adjust an opposing parties disposition. The best use for this is to open up conversation to then avoid a battle. To 
+do this elect a negotiator to try and placate the enemy warband. The roll is already calculated on your sheet, just roll above the number.
+Success means that you can change the enemy's disposition by one position. Failure means it moves in the opposite of the intended position.
+These are the broad dispositions as described by the DMG:
+
+Friendly/Fearful <---> Indifferent <---> Cautious <---> Hostile <---> Confident <---> Over Confident
+
+This can mean that a hostile set of Orcs can be made cautious and open up a negotiation or Confident Drow can be made over confident
+to then lure them into a trap. Some enemies can never be made Friendly, they will always become fearful instead. You do not need to speak
+the enemy's language to make a reaction adjustment but if you can't you won't be able to follow up with a negotiation. You can only adjust
+reaction once but Bards, some Clerics and Spells can move the disposition even more. This makes Bards expert negotiators because they
+have the ability to make any Hostile warband become Indifferent or Overconfident, both are some of the best situations. To increase your 
+reaction adjustment the best way is with a high Charisma. Dexterity adds some as well, but only at high scores. (+1 at 13 Cha and +1 at
+16 Dex) Protip: You can be clever and infuence two third parties into fighting eachother or working together.
+
+---Torsvik's Challonge---
+Get a Bard and a Cleric of Reueherr in a party to make a team of unstoppable negotiators. Try to do an all pacifist run. Bonus points if 
+you can sit down for a nice chat with an adventure boss. Double bonus if you can convince him to give up some treasure.

@@ -1,0 +1,35 @@
+You wish to become famous.
+You wish to help people in need.
+You wish to bring peace to your countrymen.
+You wish to amass a fortune.
+You wish to become a hero of legend.
+Advised by your priest to appease [deity].
+You wish to improve your [class] abilities.
+You seek proof of your familie's noble lineage.
+You have angered [deity] and you seek penitence.
+You suffer from wanderlust.
+You seek purpose in life.
+You wish to raise your social status.
+You have accumulated massive debts that need to be repaid.
+Your [family] has a long term illness. You seek wealth or a cure.
+Your [family] has a accumulated massive debts. Unable to pay the debt is passed to you.
+Your [family] struck a poor deal with [antagonist]. You want to clear their debts.
+Your [family] was kidnapped by [villain]. You seek their whereabouts.
+Your [family] was killed by [villain]. You seek justice.
+Your [family] was murdered by [antagonist]. You must train to seek revenge.
+Your [family] was enslaved by [antagonist]. You seek their freedom.
+Your [family] was eaten by [monster]. You left to hunt your quarry.
+A family heirloom was stolen by [villain]. Perhaps you can reclaim it.
+A family heirloom was confiscated by [antagonist]. You need the to skill to take it back.
+You were dishonoured by [antagonist]. You must improve your skills to duel them.
+Your [family] was assulted by [antagonist]. You must improve your skills to duel them.
+You seek the approval of [protagonist] you set out to amass wealth to gain their favor.
+You seek the approval of [protagonist] you seek an heirloom to gain their favor.
+You seek the approval of [protagonist], to gain favor you set out to prove your mettle.
+[protagonist] was dishonoured by [antagonist]. You wish to clear their name.
+[protagonist] has become a puppet to [antagonist]. You must be strong to face them.
+[protagonist] was slain by [antagonist]. This villainy cannot continue.
+[deity] was dishonoured by [antagonist]. You wish to clear their name.
+You seek the approval of [deity] you set out to amass wealth to gain their favor.
+You seek the approval of [deity] you seek an heirloom to gain their favor.
+You seek the approval of [deity], to gain favor you set out to prove your mettle.

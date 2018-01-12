@@ -1,0 +1,5 @@
+Animal Training Trap
+
+You encounter a wild animal (wolf?) while scouting a clearing.
+
+If approached the animal will reveal that it is rabid. Being damaged by the animal will force the defender to make a CON check or contract Rabies. The animal will leave if ignored.

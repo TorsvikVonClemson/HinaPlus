@@ -1,0 +1,3 @@
+~~~Bola~~~
+ A successful hit forces the opponent to make a STR check or be held fast. Called shots can be made to an opponents legs to trip them,
+their arms to disarm and give a -2 to their escape check and, if they lack a full helm, the neck for 1D3 strangulation damage per turn.
