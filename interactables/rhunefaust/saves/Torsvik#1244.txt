@@ -1,3 +1,0 @@
-Move Speed: 6
-Current Distance: 126
-Date: 35:0
