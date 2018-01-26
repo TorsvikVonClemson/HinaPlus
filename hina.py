@@ -2,6 +2,7 @@ from __future__ import unicode_literals
 
 import discord
 import asyncio
+from discord.ext import commands
 import youtube_dl
 import commands.testmodule
 import commands.hub
@@ -22,12 +23,28 @@ client = discord.Client()
 musicroot=os.path.dirname(__file__)+"/../../Music/hina/"
 bumptime=0
 
-async def music():
+class Music(object):
+    voice=None
+    player=None
     channel = client.get_channel('302280204015894549')
-    voice = await client.join_voice_channel(channel)
-    player = await voice.create_ytdl_player('https://www.youtube.com/watch?v=ypZThNvKw0g', ytdl_options=None,use_avconv=True)
-    player.start()
 
+
+    async def initialize(self):
+        self.voice = await client.join_voice_channel(client.get_channel('302280204015894549'))
+        self.player = await self.voice.create_ytdl_player('https://www.youtube.com/watch?v=ypZThNvKw0g', ytdl_options=None,                                                    use_avconv=True)
+        self.player.start()
+
+    async def rip(self):
+        self.player.stop()
+        await self.voice.disconnect()
+        self.voice = await client.join_voice_channel(client.get_channel('245323860344438784'))
+        self.player = await self.voice.create_ytdl_player('https://www.youtube.com/watch?v=kqjVqIYpgak', ytdl_options=None,                                                    use_avconv=True)
+        self.player.start()
+
+    def stop(self):
+        self.player.stop()
+
+x=Music()
 
 @client.event
 async def on_ready():
@@ -35,9 +52,7 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('------')
-    await music()
-    
-
+    await x.initialize()
 
 
 
@@ -48,6 +63,7 @@ async def on_message(message):
     image='fault'
 
     if message.content.startswith('!test'):
+        x.stop()
         counter = 0
         tmp = await client.send_message(message.channel, 'Calculating messages...')
         async for log in client.logs_from(message.channel, limit=100):
@@ -71,6 +87,12 @@ async def on_message(message):
 
     elif message.content.startswith('!block'):			#Test for blocks
         await client.send_message(message.channel, '')
+
+    elif message.content.startswith('!rip'):			#Test for blocks
+        await x.rip()
+
+    elif message.content.startswith('!loveme'):
+        await client.send_message(message.channel, 'no')
 
     elif message.content.startswith('!loveme'):
         await client.send_message(message.channel, 'no')
@@ -115,5 +137,11 @@ async def on_message(message):
         await client.send_message(message.channel,'{}'.format(say) ) 
     if image!='fault':
         await client.send_file(message.channel,'{}'.format(image))
+
+    @property
+    def player(self):
+        return self.current.player
+
+
 
 client.run('MzAxNjM4NDg3NjMzODIxNjk3.C9Ahqw.u53J4fjNPW-ODS0XnqZvtlqjJiY')
