@@ -26,7 +26,7 @@ def sort(x):
     elif x.startswith('!image'):
       x='fault'
 
-    elif x.startswith('!') and ((x.find('D') != -1) or (x.find('K') != -1)):
+    elif x.startswith('!') and ((x.find('D') != -1) or (x.find('K') != -1) or (x.find('d') != -1) or (x.find('k') != -1)):
       x=D20.say(x)
 
     else:
