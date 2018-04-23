@@ -25,7 +25,7 @@ class Music(object):
 
     async def initialize(self):
         self.voice = await client.join_voice_channel(client.get_channel('302280204015894549'))
-        self.player = await self.voice.create_ytdl_player('https://www.youtube.com/watch?v=ypZThNvKw0g', ytdl_options=None, use_avconv=True)
+        self.player = await self.voice.create_ytdl_player('https://www.youtube.com/watch?v=34UutDrXV2Q', ytdl_options=None, use_avconv=True)
         self.player.start()
 
     async def rip(self):
@@ -33,18 +33,68 @@ class Music(object):
         await self.voice.disconnect()
         self.voice = await client.join_voice_channel(client.get_channel('245323860344438784'))
         self.player = await self.voice.create_ytdl_player('https://www.youtube.com/watch?v=kqjVqIYpgak', ytdl_options=None,use_avconv=True)
+        self.player.volume=.05
+        self.player.start()
+
+    async def traka(self):
+        self.player.stop()
+        await self.voice.disconnect()
+        self.voice = await client.join_voice_channel(client.get_channel('245323860344438784'))
+        self.player = await self.voice.create_ytdl_player('https://www.youtube.com/watch?v=XCiDuy4mrWU',
+                                                              ytdl_options=None, use_avconv=True)
+        self.player.volume = .05
+        self.player.start()
+
+    async def trakb(self):
+        self.player.stop()
+        await self.voice.disconnect()
+        self.voice = await client.join_voice_channel(client.get_channel('245323860344438784'))
+        self.player = await self.voice.create_ytdl_player('https://youtu.be/8kqscI_c1mY',
+                                                              ytdl_options=None, use_avconv=True)
+        self.player.volume = .05
+        self.player.start()
+
+    async def trakc(self):
+        self.player.stop()
+        await self.voice.disconnect()
+        self.voice = await client.join_voice_channel(client.get_channel('245323860344438784'))
+        self.player = await self.voice.create_ytdl_player('https://youtu.be/1wG33sjUSi8',
+                                                              ytdl_options=None, use_avconv=True)
+        self.player.volume = .05
+        self.player.start()
+
+    async def trakd(self):
+        self.player.stop()
+        await self.voice.disconnect()
+        self.voice = await client.join_voice_channel(client.get_channel('245323860344438784'))
+        self.player = await self.voice.create_ytdl_player('https://youtu.be/8q0alRhsVgE',
+                                                              ytdl_options=None, use_avconv=True)
+        self.player.volume = .05
+        self.player.start()
+
+    async def trake(self):
+        self.player.stop()
+        await self.voice.disconnect()
+        self.voice = await client.join_voice_channel(client.get_channel('245323860344438784'))
+        self.player = await self.voice.create_ytdl_player('https://www.youtube.com/watch?v=saVZRj1qiKw',
+                                                              ytdl_options=None, use_avconv=True)
+        self.player.volume = .05
+        self.player.start()
+
+    async def trakf(self):
+        self.player.stop()
+        await self.voice.disconnect()
+        self.voice = await client.join_voice_channel(client.get_channel('245323860344438784'))
+        self.player = await self.voice.create_ytdl_player('https://www.youtube.com/watch?v=34UutDrXV2Q',
+                                                              ytdl_options=None, use_avconv=True)
+        self.player.volume = .05
         self.player.start()
 
     def stop(self):
         self.player.stop()
 
-    async def next(self):
-        if self.player.is_done():
-            await Music.rip(self)
-
 x=Music()
 
-do=Actions()
 
 @client.event
 async def on_ready():
@@ -96,8 +146,26 @@ async def on_message(message):
 # !commands #
 #-----------#
 
-    elif message.content.startswith('!rip'):			#Test for blocks
+    elif message.content.startswith('!rip'):
         await x.rip()
+
+    elif message.content.startswith('!traka'):
+        await x.traka()
+
+    elif message.content.startswith('!trakb'):
+        await x.trakb()
+
+    elif message.content.startswith('!trakc'):
+        await x.trakc()
+
+    elif message.content.startswith('!trakd'):
+        await x.trakd()
+
+    elif message.content.startswith('!trake'):
+        await x.trake()
+
+    elif message.content.startswith('!trakf'):
+        await x.trakf()
 
     elif message.content.startswith('!'):
         image='fault'
