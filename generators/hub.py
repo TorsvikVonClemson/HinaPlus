@@ -1,5 +1,5 @@
 from generators.adnd import adndhub
-from generators.adnd import gem
+from generators.loot import gem
 
 def sort(x):
 
