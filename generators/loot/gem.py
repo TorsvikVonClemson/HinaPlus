@@ -1,4 +1,5 @@
 import random
+import os
 
 def roll(x):
     x=[]
@@ -6,27 +7,75 @@ def roll(x):
     value=random.randint(1,100)
 
     if value<=25:
-        n="ornamental"
+        file = "/generators/loot/ornamental.txt"
+        path=os.getcwd()+file
+        fp=open(path,'r+');
+        with open(path,"r") as text_file:
+            list=text_file.readlines()
+            text_file.close()
+        choice = random.choice(list)
+        choice = choice.rstrip('\n')
+        n=choice
         v=10
 
     elif value>25 and value<=50:
-        n="semi precious"
+        file = "/generators/loot/semiprecious.txt"
+        path=os.getcwd()+file
+        fp=open(path,'r+');
+        with open(path,"r") as text_file:
+            list=text_file.readlines()
+            text_file.close()
+        choice = random.choice(list)
+        choice = choice.rstrip('\n')
+        n=choice
         v = 50
 
     elif value > 50 and value <= 70:
-        n = "fancy"
+        file = "/generators/loot/fancy.txt"
+        path=os.getcwd()+file
+        fp=open(path,'r+');
+        with open(path,"r") as text_file:
+            list=text_file.readlines()
+            text_file.close()
+        choice = random.choice(list)
+        choice = choice.rstrip('\n')
+        n=choice
         v = 100
 
     elif value>70 and value<=90:
-        n="precious"
+        file = "/generators/loot/precious.txt"
+        path=os.getcwd()+file
+        fp=open(path,'r+');
+        with open(path,"r") as text_file:
+            list=text_file.readlines()
+            text_file.close()
+        choice = random.choice(list)
+        choice = choice.rstrip('\n')
+        n=choice
         v = 500
 
     elif value>90 and value<=99:
-        n="gem"
+        file = "/generators/loot/gem.txt"
+        path=os.getcwd()+file
+        fp=open(path,'r+');
+        with open(path,"r") as text_file:
+            list=text_file.readlines()
+            text_file.close()
+        choice = random.choice(list)
+        choice = choice.rstrip('\n')
+        n=choice
         v = 1000
 
     elif value==100:
-        n = "jewel"
+        file = "/generators/loot/jewel.txt"
+        path=os.getcwd()+file
+        fp=open(path,'r+');
+        with open(path,"r") as text_file:
+            list=text_file.readlines()
+            text_file.close()
+        choice = random.choice(list)
+        choice = choice.rstrip('\n')
+        n=choice
         v=5000
 
     mod=random.randint(1,6)
