@@ -1,0 +1,9 @@
+Guarded Cobbling Treasure
+
+You encounter the remains of an adventurer crushed during a rock fall.
+
+His boots seem to be magical, COBBLING+5 can attempt to repair them. Failure creates CURSED IRON BOOTS, success creates BOOTS OF STABILITY
+
+IRON BOOTS: This cursed item weighs 50 lbs to the wearer and causes you to sing to the bottom of and unstable ground.
+
+BOOTS OF STABILITY: Allows the wearer to walk on any surface, including liquids and clouds with no negatives. The boots are however very stiff and the wearer is always flatfooted.

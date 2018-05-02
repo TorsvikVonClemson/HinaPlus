@@ -1,0 +1,5 @@
+Mining Trap
+
+The party comes across a 5 ft deep gultch cut away by a small stream.
+
+The walls of the gultch can be examined with MINING to reveal an exposed silver/gold vein. If equipped with mattoks the players can mine the ore. A player can mine 1 lb per OPEN DOOR per hour. The Raw silver/gold can be sold for 1g/10g per pound unless it is smelted (converts to coinage). After striking the earth, the wall suddenl begins to shift revealing and enraged earth elemental.

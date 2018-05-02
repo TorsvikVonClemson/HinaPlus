@@ -1,0 +1,9 @@
+Bandit Travelers
+
+Hearing check: You can hear a party traveling just out of eyeshot
+
+A party of bandits are traveling to their next destination.
+
+The the bandits immediately assume the party to be police. If the party does not maintain the intimidation the bandits will attack.
+
+HUMANOID ENCOUNTER

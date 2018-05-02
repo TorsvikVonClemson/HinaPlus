@@ -1,0 +1,9 @@
+Major Agricultureal Treasure
+
+You arrive in a clearing full of low growing flowers and weeds.
+
+        * * *
+AGRICULTURE identifies the clearing as a farm that was abandoned long ago. After taking this intrest the player notices an old silk ribbon that was ties to a bush long ago. 
+
+Removing the bush reveals a lockbox with an art object of small or medium size inside. The chest itsself weights 10 lbs.
+        * * *

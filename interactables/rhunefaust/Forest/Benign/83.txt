@@ -1,0 +1,5 @@
+Rope Use Trap
+
+A chest is suspended in a tree by a rope, hanging precariously.
+
+The rope cannot be cut by anymeans. Attempting to use ROPE USE to untie the chest causes the rope to spring to life, forming a noose around the players neck dropping the chest to the ground revealing it was only full of rocks!. The noose causes 6 point of damage and the rope can only be removed via a Bend Bars/Lift Gates.

@@ -1,0 +1,5 @@
+Minor Fishing Treasure
+
+You enter an open cavern filled with an underground lake.
+
+Someone with the FISHING skill will recognise this place as a great fishing spot. If the player has a fishing hook, gain 2D6 food. 6D6 if the player has a net.

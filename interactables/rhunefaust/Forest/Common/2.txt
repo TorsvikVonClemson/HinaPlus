@@ -1,0 +1,7 @@
+Swarm of Ravens
+
+Hearing check: The party hears a mass rustling of leaves or flapping of wings. Failure begins a sneak attack.
+
+A swarm of starving Ravens descends on the party.
+
+On successful attack there is a 10% chance that the raven plucks out an eye.

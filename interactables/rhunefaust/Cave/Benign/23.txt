@@ -1,0 +1,5 @@
+Cooking Trap
+
+Traveling through the tunnels you encounter a patch of subterranean vegitation you must traverse.
+
+COOKING reveals the patch to contain Quarry Bushes. They are howver RETCH BUSHES and they begin to throw their nuts at the party. (see PLANT,DANGEROUS,RETCH PLANT)

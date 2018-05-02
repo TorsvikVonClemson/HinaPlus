@@ -1,0 +1,5 @@
+Spider, Hairy
+
+The party comes across a small clearing filled with hollow tree stumps and logs.
+
+Interacting with one of these logs will cover the player in spiders.

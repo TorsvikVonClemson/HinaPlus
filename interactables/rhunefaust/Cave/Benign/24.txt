@@ -1,0 +1,5 @@
+Guarded Cooking Treasure
+
+Traveling through the tunnels you encounter a patch of subterranean vegitation you must traverse.
+
+A COOK may see a patch of Dwarf Pebbles (Pebble Plants). If cooked properly you can make 1 gallon (10 lbs 16 or 8 drinks) of either ELIXERS OF HEALTH or FIRE RESISTANCE. The former is exceptionally difficult (+5) and failure makes an indistinguishable poison (-1 STR & DEX untill cure poison is used)

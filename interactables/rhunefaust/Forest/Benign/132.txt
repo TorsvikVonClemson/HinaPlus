@@ -1,0 +1,5 @@
+Guarded Herbalism Treasure
+
+You arrive in a clearing full of low growing flowers and weeds.
+
+Someone with HERBALISM will notice vinse of BLOODROSE growing up the side of a tree, a plant useful in making potions of healing and weapons of vampire slaying. The Plant is not about to give its nectar up for free however. The plant will attack someone without HERBALISM searching the field or players otherwise lingering

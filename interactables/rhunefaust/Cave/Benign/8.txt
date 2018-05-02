@@ -1,0 +1,6 @@
+Guarded Blacksmithing Treasure
+
+You come across a large hollowed out section of the cave, within there is a large mechanism used for metal processing
+
+A BLACKSMITH will notice that an item was abandoned in the forging process. If he can finish production (BLACKSMITHING+5) it will create a ball of IRON BANDS. Failure traps the smith.
+

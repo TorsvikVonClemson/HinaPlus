@@ -2,6 +2,9 @@ import os
 import fnmatch
 import random
 
+from interactables.rhunefaust import humanoids
+
+
 
 def sort(x,author):
     active=0
@@ -12,14 +15,20 @@ def sort(x,author):
     path = os.getcwd() + file
     authpath=path.format(author)
 
+    nextbiome='null'
 
+
+    #Check for Save
     active=find(str(author) + '.txt', os.getcwd()+'/interactables/rhunefaust/saves/')
 
     if x.startswith('begin') and (active == 0):
+        biome='Forest'
+        biomeedge=False
         with open(authpath, "w") as text_file:
             text_file.write('Move Speed: {}\n'.format(0))
             text_file.write('Current Distance: 0\n')
-            text_file.write('Date: 0:00\n')
+            text_file.write('Date: 6:00\n')
+            text_file.write(biome)
 
         text_file.close()
         x = 'instance created with 0 values. Please manually set $speed.'
@@ -30,8 +39,17 @@ def sort(x,author):
     elif x.startswith('next') and (active == 1):
         n=[]
 
+        #Read Save
         with open(authpath, "r") as text_file:
             workingfile=text_file.readlines()
+        text_file.close()
+
+        #Read Biome Params
+        biomeparamsdir = "/interactables/rhunefaust/" + workingfile[3] + "/params.txt"
+        biomeparamspath = os.getcwd() + biomeparamsdir
+
+        with open(biomeparamspath, "r") as text_file:
+            params = text_file.readlines()
         text_file.close()
 
         i=0
@@ -57,15 +75,48 @@ def sort(x,author):
         currenttime=clock(currenttime,timeinterval)
         update(authpath,2,'Date: {}\n'.format(currenttime))
 
-        biome = "/interactables/rhunefaust/BenignForest/{}.txt"
-        biomepath = os.getcwd() + biome
-        roll=random.randint(1, 132)
-        with open(biomepath.format(str(roll)), "r") as text_file:
-            readout=text_file.readlines()
-        text_file.close()
+        #Biome Change Check
 
-        x=''.join(workingfile)+'\n'+'Event No.: '+str(roll)+\
-          '\n'+''.join(readout)
+        if distance>=100 and workingfile[3]=="Forest":
+            x='The party enters a cave'
+            distance=0
+            update(authpath, 1, 'Current Distance: {}\n'.format(distance))
+            update(authpath, 3, "Cave")
+
+        if distance>=100 and workingfile[3]=="Cave":
+            x='The party enters a kobold farm'
+            distance=0
+            update(authpath, 1, 'Current Distance: {}\n'.format(distance))
+            update(authpath, 3, "Kobold Farm")
+
+        if distance>=100 and workingfile[3]=="Kobold Farm":
+            x='BOSS!!'+humanoids.humanoids()
+            distance=0
+            update(authpath, 1, 'Current Distance: {}\n'.format(distance))
+
+        #No Change
+        else:
+            roll=random.randint(1, int(params[1].rstrip('\n')))
+            if roll<=int(params[2].rstrip('\n')):
+                encounter="Benign"
+            else:
+                roll = random.randint(1, int(params[3].rstrip('\n')))
+                encounter="Common"
+
+            biomedir = "/interactables/rhunefaust/"+workingfile[3]+"/"+encounter+"/{}.txt"
+            biomepath = os.getcwd() + biomedir
+
+            with open(biomepath.format(str(roll)), "r") as text_file:
+                readout=text_file.readlines()
+            text_file.close()
+
+            combat=''
+            if 'HUMANOID ENCOUNTER' in ''.join(readout):
+                combat=humanoids.humanoids()
+
+            x=''.join(workingfile)+'\n\n'+encounter+' Event No.: '+str(roll)+\
+                '\n'+''.join(readout)+combat
+
 
     elif x.startswith('speed') and (active == 1):
         x=x.lstrip('speed')
@@ -76,12 +127,17 @@ def sort(x,author):
         else:
             x='Last time I checked you can only move at positive integers.'
 
+    elif x.startswith('camp') and (active == 1):
+        update(authpath, 2, 'Date: {}\n'.format(clock('6:00',0)))
+
+
+
     elif x.startswith('close'):
         os.remove(authpath)
         x='Run Deleted!'
 
     else:
-        x = 'TODO: Pass "$rhunefaust" error message'
+        x = 'TODO: Pass "$rhunefaust" error message... Commands are begin,next, speed and close'
 
     return x
 

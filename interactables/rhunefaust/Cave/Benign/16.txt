@@ -1,0 +1,5 @@
+Guarded Carpentry Treasure
+
+You come across a small rotten wooden door that has been built into the side of the cave
+
+Approaching the door, the structure feels to be icy cold. If opened a gust of cold air comes out The gust of air has all the effects of CHILL TOUCH. (death priest will notice its ability to turn undead). Inside the players will see a random magic weapon. It is embedded in ice and takes 10 CONSECUTIVE turns to remove. CARPENTRY reveals the boards to be made of Nether Cap. CARPENTRY+5 can remove the NEther Cap safely.

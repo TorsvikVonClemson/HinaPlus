@@ -1,5 +1,0 @@
-Guarded Blacksmithing Treasure
-
-Wandering through the woods you encounter a lone wood elf, they seem highly distracted by an odd item.
-
-The wood elf does not speak Faustic and is studying a wrought iron fencepost he had found. He wants to undestand how it was made, a player with BLACKSMITHING+5 may inform him. If the process is not explained clearly enough for him to understand he will become enraged a scream out a curse. All metal items exposed will turn to dust. Upon success he will enchant the post to become an immoveable rod.

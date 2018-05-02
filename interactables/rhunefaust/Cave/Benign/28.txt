@@ -1,0 +1,5 @@
+Guarded Direction Sense Treasure
+
+While Traveling you see sveral small passages open up into the walls of the cave. You feel that even a Dwarf could get lost in these winding passages.
+
+While exploring these tunnles you notice many of the walls have markings indicating that not all tunnels are natural. Suddenly, you find yourself on a wooden plate that spins you have severly become lost. The player may chose to go deeper in search for treasure or return to the surface. All rolls are DIRECTION SENSE +5.  Failure takes 1 hr, it requires 3 rolls to leave, 6 if you go deeper. The player will find a TYPE I LAIR TREASURE in the tunnles.

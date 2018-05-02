@@ -1,5 +1,0 @@
-Major Blacksmithing Treasure
-
-You come upon what is a long since delapitated building. The only thing revealing its past state is the now overgrown cobble stone floor. A few knee high piles of moartered stone still stand and a pile of rubble littered with several cannonballs which lay pressed against a tree.
-
-If the cannonballs are checked with BLACKSMITHING the player will notice that one is significantly lighter. Melting it down reveals that it contained 1d6+4 gems.

@@ -1,0 +1,3 @@
+Gremlin, Snyad
+
+Select a party member at random. Seemingly from nowhere, a gremlin runs up snatches an item the player is holding (flip a coin for left or right, wisdom to keep hold). The creature then immediately runs into its lair.(1-4 chance to spot 1-3 for elves)

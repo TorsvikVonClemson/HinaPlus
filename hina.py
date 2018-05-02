@@ -184,9 +184,12 @@ async def on_message(message):
         image = 'fault'
         name = message.content[len('$name'):].strip()
         send = message.content
-        data = interactables.hub.sort(send,message.author)
-        say = data[1]
-        image = data[0]
+        say = interactables.hub.sort(send, message.author)
+
+        #data = interactables.hub.sort(send,message.author)
+        #say = data[1]
+        #image = data[0]
+
         
     if say != 'fault':
         await client.send_message(message.channel, '{}'.format(say).format(message.author))

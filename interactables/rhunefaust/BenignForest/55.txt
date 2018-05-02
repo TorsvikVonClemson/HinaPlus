@@ -1,5 +1,0 @@
-Trapped Fishing
-
-The pary enters a small glade, a pond glistens in the light.
-
-Someone with the FISHING skill will recognise this place as a great fishing spot. If the player has a fishing hook, gain 2D6 food. 6D6 if the player has a net. What the fisher doesnt realise is that these fish have become highly mercuric. If eaten the party may become very sick.

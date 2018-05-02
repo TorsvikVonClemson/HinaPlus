@@ -1,0 +1,7 @@
+Major Pottery Treasure
+
+Wandering through the woods you encounter a lone wood elf, they seem highly distracted.
+
+The wood elf does not speak Faustic and is crafting a vase. Next to him is a fresh pile of clay. Someone with POTTERY can attempt to mimic their craft. If impressed they will invite you into their home, grant their hospitality for the night and give them the finished art object, a JUG OF BERSERK WINE.
+
+Jug of Berserk Wine: The Player must spend 4 rounds chugging the entire jug (CON) after doing so the player will go berserk. The players STR increases to 20 for the next 10 minuets as they kill everything in sight. They player can make no logical decisions while berserk but the can retain a single simple order by reciting it in their head over and over while they drink. (Go foreward. Burn the Troll. Kill the Wizard first.) If the order goes against the berserk nature the order will be forgotten entirely. (Several guards stand between the player and the Wizard) If the berserk character sees nothing to kill and has no applicable orders to follow he will scream and make a rukus to try and attract attention. The Jug refills overnight and has no lid so it must be held in hand to prevent spilling.

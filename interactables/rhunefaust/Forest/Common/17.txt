@@ -1,0 +1,9 @@
+Police Patrol
+
+The players hear the laughing and murmers of humans.
+
+There is a group of armed men wandering through the forest.
+
+If startled the police will take defensive positions and ask the party to identify themselves.
+
+HUMANOID ENCOUNTER

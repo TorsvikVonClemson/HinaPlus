@@ -1,0 +1,5 @@
+Minor Stonemasonry Treasure
+
+You come upon what is a long since delapitated house. The only thing revealing its past state is the now overgrown cobble stone floor. A few knee high piles of moartered stone still stand and a pile of rubble lay pressed against a tree.
+
+If the loaction is searched with STONEMASONRY they will find a section of loose cobbles. Beneath is a small stash of treasure 3D6 gold.

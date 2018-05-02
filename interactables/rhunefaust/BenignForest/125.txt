@@ -1,5 +1,0 @@
-Minor Healing Treasure
-
-While traveling the players spot a gypsie caravan, they hail the players.
-
-They say thet one of the members of the caravan has gotten sick. Problem is that their hearler is the one thats sick. They need a diagnoses so they can treat him. Using HEALING. Thet pay what they consider a standard fee of 25 copper

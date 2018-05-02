@@ -1,0 +1,5 @@
+Direction Sense Trap
+
+While Traveling you see sveral small passages open up into the walls of the cave. You feel that even a Dwarf could get lost in these winding passages.
+
+If someone enters the passage without DIRCTION SENSE or passes by less than 5 that player will inexplicably find themselves on the surface. Reentering will only get them more lost.

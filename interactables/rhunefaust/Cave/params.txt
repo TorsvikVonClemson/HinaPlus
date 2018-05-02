@@ -1,0 +1,5 @@
+The roll parameters listed by roll and max in order of Benign->Very Rare
+40
+45
+25
+25

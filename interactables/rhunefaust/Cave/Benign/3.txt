@@ -1,0 +1,5 @@
+Agriculture Trap
+
+Traveling through the tunnels you encounter a patch of subterranean vegitation you must traverse.
+
+IF AGRICULTURE os used and passes by less than 5 it appears to be a patch of Plump Helmet, it is in actuality a clustered strain of Fungus,Violet.

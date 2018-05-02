@@ -1,5 +1,0 @@
-Guarded Stonemasonry Treasure
-
-In the distance the party spots a stone statue, 8 ft tall.
-
-The statue is of Girda, goddess of cities. She stands looking over a model of a city. The a section of the city wall is ruined with giants poised to rush into the city. Should a player pass a STONEMASONRY+5 the roof of the city bank will unlatch. Inside is a CUBE OF FORCE. Failure causes an enraged stone golem to climb from the earth.

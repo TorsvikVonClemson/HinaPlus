@@ -1,0 +1,7 @@
+Minor Carpentry Treasure
+
+You encounter a section of wall that was once part of a mansion that fell over 100 years ago. Whats more impressive than the fact that this wall still stands but on the inner side there is an engraving into the wood depicting an ancient battle, protected from weather by a still intact outcropping of celing.
+
+The engraving can be removed by someone with the Carpentry skill. Its weighty but may fetch a suitable price. CARPENTRY failure results in the destruction of the object.
+
+[Treasure Wooden Large]

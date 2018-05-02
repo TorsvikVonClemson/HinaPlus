@@ -1,0 +1,9 @@
+Guarded Brewing Treasure
+
+Along a stream you find a strange brass and tin cauldron. There is a small coal fire heating the mechanism and one of the tanks bears the seal of some noble.
+
+Someone with the BREWING skill will recognize it as a distilling tank for moonshine. The party will find however that the spoils of the tank have already been plundered. 
+
+Anyone with the TRACKING skill will notice that the distillery has been previously disturbed. Following the tracks will bring the party to an enemy party (difficulty+1) who have stolen their fill. The moonshine can be retrived and returned to the site for a hefty reward (1d6 gold). 
+
+Should the party stay at the site empty handed a group of soldiers will arrive (difficulty +2) and attack the tresspassers.

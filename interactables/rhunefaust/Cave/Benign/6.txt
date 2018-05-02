@@ -1,0 +1,5 @@
+Major Blacksmithing Treasure
+
+You come across a large hollowed out section of the cave, within there is a large mechanism used for metal processing
+
+You can spend an hour with blacksmithing to get the smelter running again creating 1D10*2000 SP in ingots.

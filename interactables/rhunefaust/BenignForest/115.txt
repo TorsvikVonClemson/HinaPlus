@@ -1,6 +1,0 @@
-Ancient History Trap
-
-The party comes up to a cliff wall. Along it they spot some bizarre architecture.
-
-There is a series of stone arches engraved into the wall. There are a bunch of symbols written in the colums in Draconic. Translate it basicly says "Kilroy was here".
-Someone with ANCIENT HISTORY will recognise the symbols as a cache of weapon maintained by the rebel soldiers. If the player passes by +2 he will notice that the inscription is slightly mispelled. He only needs to pass normally if he recognises the symbols. The cache was found out by Draconic forces and has been filled with corpses. 200 years of corpse gas flows out, CON check or be diseased.

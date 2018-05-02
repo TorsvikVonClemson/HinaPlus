@@ -1,0 +1,7 @@
+Agricultureal Trap
+
+You arrive in a clearing full of low growing flowers and weeds.
+
+        * * *
+AGRICULTURE identifies the plant as edible tubers underground (TODO:potatoes,radishes etc) yielding 2D6 of food. The food however is toxic and mercuric making any players who eat the tubers mercuric as well. HERBALISM, HEALING, SURVIVAL, AGRICULTURE+5.
+        * * *

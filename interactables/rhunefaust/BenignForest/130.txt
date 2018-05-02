@@ -1,5 +1,0 @@
-Major Herbalism Treasure
-
-You arrive in a clearing full of low growing flowers and weeds.
-
-Herbalism recognises many of the plants a disease/poison (50/50) curing herbs. Collecting and drying them makes potions of cure disease.

@@ -1,5 +1,0 @@
-Trapped Fire Building
-
-In the distance the party spots a stone statue, 8 ft tall.
-
-The statue depicts the god Leuctag, god of fire. He stands with his arms wide outstretched. Before him is a large stone bowl.Lighting the bowl with FIREBUILDING will cause the statue to cast BURNING HANDS on the entire party, starting a wildfire.

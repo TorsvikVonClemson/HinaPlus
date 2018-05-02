@@ -1,0 +1,7 @@
+Minor Agricultureal Treasure
+
+"You arrive in a clearing full of low growing flowers and weeds."
+
+        * * *
+AGRICULTURE identifies the plant as edible tubers underground (potatoes,radishes etc) yielding 2D6 of food
+        * * *

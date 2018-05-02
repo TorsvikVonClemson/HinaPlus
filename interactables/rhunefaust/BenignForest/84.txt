@@ -1,5 +1,0 @@
-Guarded Rope Use Treasure
-
-A man is suspended upsidedown in a tree. He offers you a reward if you can get him down. You see a length of rope attached to the ground. The man warns you that the trap is made tamper proof and if disarmed improperly he will die.
-
-If ROPE USE is used and failed the player will know that they cannot undo the trap rather then accidently set it off, success means that they can lower the man to safety. A rogue however runs the risk of setting off the trap. If the trap is set off he will fall and be struck by a log pendulum killing him dead. If he survives he will offer the party a Rod of Splendor a popular item for traveling nobles and ask to borrow some clothes. If he dies all party members suffer 1 MACABRE, 2 for the person who failed. The players can choose to not risk his life and leave him to his elven captors. The elves will not give him up for any price as he is the spoils of a hunt.

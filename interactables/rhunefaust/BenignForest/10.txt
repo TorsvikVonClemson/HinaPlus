@@ -1,5 +1,0 @@
-Minor Animal Training Treasure
-
-You encounter a wild animal (TODO GIT A LIST wolf?) while scouting a clearing.
-
-If approached the animal will leave but ANIMAL TRAINING will cause it to follow the party. This animal has the potential to become an animal companion
