@@ -83,13 +83,13 @@ def sort(x,author):
             update(authpath, 1, 'Current Distance: {}\n'.format(distance))
             update(authpath, 3, "Cave")
 
-        if distance>=100 and workingfile[3]=="Cave":
+        elif distance>=100 and workingfile[3]=="Cave":
             x='The party enters a kobold farm'
             distance=0
             update(authpath, 1, 'Current Distance: {}\n'.format(distance))
             update(authpath, 3, "Kobold Farm")
 
-        if distance>=100 and workingfile[3]=="Kobold Farm":
+        elif distance>=100 and workingfile[3]=="Kobold Farm":
             x='BOSS!!'+humanoids.humanoids()
             distance=0
             update(authpath, 1, 'Current Distance: {}\n'.format(distance))
