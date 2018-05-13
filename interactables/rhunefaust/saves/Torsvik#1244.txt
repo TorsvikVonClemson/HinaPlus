@@ -1,4 +1,6 @@
-Move Speed: 1
-Current Distance: 80
-Date: 130:0
-Forest
+Move Speed: 15
+Players: 6
+Current Distance: 4425
+Date: 1098:0
+Kobold Farm
+Current Level: 3

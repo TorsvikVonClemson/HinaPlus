@@ -1,0 +1,13 @@
+Hobgoblin
+5
+10
+8
+1
+2D4
+1D6
+1D1
+8
+3
+11
+J,M,D
+"Hobgoblins are strategists and prefer to attack elves first."

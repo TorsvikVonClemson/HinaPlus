@@ -1,0 +1,6 @@
+Goblin Trap
+
+Goblins begin dropping from the trees! The goblin with the lowest init gets suprise, all others will go in order.
+
+
+HUMANOID ENCOUNTER Goblins

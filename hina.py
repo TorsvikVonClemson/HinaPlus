@@ -102,7 +102,7 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('------')
-    await x.initialize()
+    #await x.initialize()
 
 
 @client.event

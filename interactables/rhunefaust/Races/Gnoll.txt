@@ -1,0 +1,13 @@
+Gnoll
+5
+10
+8
+0
+2D4
+1D4
+1D1
+9
+2
+11
+D,QX5,S
+"Gnolls prefer to attack by overwhelming their opponent."

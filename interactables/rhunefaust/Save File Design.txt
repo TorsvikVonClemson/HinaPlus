@@ -1,0 +1,6 @@
+0	Move Speed
+1	Players
+2	Current Distance
+3	Date
+4	Biome
+5	Level

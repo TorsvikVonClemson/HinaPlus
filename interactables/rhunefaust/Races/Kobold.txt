@@ -1,0 +1,13 @@
+Kobold
+7
+10
+4
+0
+1D6
+1D4
+1D1
+5
+2
+8
+J,O
+"Kobolds have Infravision 60 but gain a -1 to attacks in bright light"

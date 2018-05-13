@@ -1,0 +1,5 @@
+Guarded Brewing
+
+A player notices that several (12) barrels are hanging from the trees.
+
+Of those barrels 11 contains poisoned wine but one contains an expensive elven wine. The are tied in such a way that removing one will cause all the others to fall, destroying them.

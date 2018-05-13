@@ -1,0 +1,17 @@
+~~~Morale~~~
+In most cases, humanoids will choose to beat you with numbers rather than by skill. You can become very quickly ovewhelmed. I'm 
+revealing the situations for moale checks to encourage the players to strategise how to overcome superior numbers.
+
+Humanoids (and some animals) must make a morale check when:
+-They are suprised
+-Faced by an obviously superior foe
+-An ally is slain by magic
+-25% have died
+-50% have died
+-Any ally is slain after 50% have died
+-A leader is slain or deserts
+-Fighting a creature it cannot harm due to magical properties
+-Forced to do a heroic task
+-Offered an adiquate bribe
+-Offered a chance at surrender after havin already made a morale check
+-Completely surrounded

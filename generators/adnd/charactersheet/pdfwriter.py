@@ -910,7 +910,7 @@ def write(header,motive,attributes,proficiencies,weapons,dosh,hp,armour,move,sav
     c.drawString(2.5*inch,(7.4-(xpos*.15))*inch,"~~~~~Quick Reference~~~~~")
     xpos+=2
 
-    ruleslist=['rules','fulldef','running','dualwielding']
+    ruleslist=['rules','fulldef','running','dualwielding','morale']
     i=0
     while i<len(specialweapons):
         if specialweapons[i] in proficiencies:

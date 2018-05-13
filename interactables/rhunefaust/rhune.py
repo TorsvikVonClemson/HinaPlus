@@ -26,9 +26,11 @@ def sort(x,author):
         biomeedge=False
         with open(authpath, "w") as text_file:
             text_file.write('Move Speed: {}\n'.format(0))
+            text_file.write('Players: {}\n'.format(0))
             text_file.write('Current Distance: 0\n')
             text_file.write('Date: 6:00\n')
-            text_file.write(biome)
+            text_file.write(biome+'\n')
+            text_file.write('Current Level: ')
 
         text_file.close()
         x = 'instance created with 0 values. Please manually set $speed.'
@@ -45,7 +47,8 @@ def sort(x,author):
         text_file.close()
 
         #Read Biome Params
-        biomeparamsdir = "/interactables/rhunefaust/" + workingfile[3] + "/params.txt"
+        biomename=workingfile[4].rstrip('\n')
+        biomeparamsdir = "/interactables/rhunefaust/" + biomename + "/params.txt"
         biomeparamspath = os.getcwd() + biomeparamsdir
 
         with open(biomeparamspath, "r") as text_file:
@@ -65,34 +68,41 @@ def sort(x,author):
 
         timeinterval=n[2]*60
 
-        distance=(workingfile[1].lstrip('Current Distance: '))
+        distance=(workingfile[2].lstrip('Current Distance: '))
         distance = int(distance.rstrip('\n'))
         distance=distance+displacement*n[1]
-        update(authpath,1,'Current Distance: {}\n'.format(distance))
+        update(authpath,2,'Current Distance: {}\n'.format(distance))
 
-        currenttime=workingfile[2].lstrip('Date: ')
+        currenttime=workingfile[3].lstrip('Date: ')
         currenttime=currenttime.rstrip('\n')
         currenttime=clock(currenttime,timeinterval)
-        update(authpath,2,'Date: {}\n'.format(currenttime))
+        update(authpath,3,'Date: {}\n'.format(currenttime))
+
+        partylevel=int(workingfile[5].lstrip('Current Level: '))
+
+        temppartysize=workingfile[1].lstrip('Players: ')
+        partysize=int(temppartysize.rstrip('/n'))
 
         #Biome Change Check
 
-        if distance>=100 and workingfile[3]=="Forest":
-            x='The party enters a cave'
+        if distance>=100 and biomename=="Forest":
+            x='The party enters the deep forest'
             distance=0
-            update(authpath, 1, 'Current Distance: {}\n'.format(distance))
-            update(authpath, 3, "Cave")
+            update(authpath, 2, 'Current Distance: {}\n'.format(distance))
+            update(authpath, 4, "Deep Forest\n")
+            levelup(authpath)
 
-        elif distance>=100 and workingfile[3]=="Cave":
-            x='The party enters a kobold farm'
+        elif distance>=100 and biomename=="Deep Forest":
+            x='The party enters a forest bog'
             distance=0
-            update(authpath, 1, 'Current Distance: {}\n'.format(distance))
-            update(authpath, 3, "Kobold Farm")
+            update(authpath, 2, 'Current Distance: {}\n'.format(distance))
+            update(authpath, 4, "Forest Bog\n")
+            levelup(authpath)
 
-        elif distance>=100 and workingfile[3]=="Kobold Farm":
-            x='BOSS!!'+humanoids.humanoids()
+        elif distance>=100 and biomename=="Forest Bog":
+            x='BOSS!!\n'#+humanoids.humanoids(partylevel,partysize,"Kobold")
             distance=0
-            update(authpath, 1, 'Current Distance: {}\n'.format(distance))
+            update(authpath, 2, 'Current Distance: {}\n'.format(distance))
 
         #No Change
         else:
@@ -103,7 +113,7 @@ def sort(x,author):
                 roll = random.randint(1, int(params[3].rstrip('\n')))
                 encounter="Common"
 
-            biomedir = "/interactables/rhunefaust/"+workingfile[3]+"/"+encounter+"/{}.txt"
+            biomedir = "/interactables/rhunefaust/"+biomename+"/"+encounter+"/{}.txt"
             biomepath = os.getcwd() + biomedir
 
             with open(biomepath.format(str(roll)), "r") as text_file:
@@ -112,7 +122,8 @@ def sort(x,author):
 
             combat=''
             if 'HUMANOID ENCOUNTER' in ''.join(readout):
-                combat=humanoids.humanoids()
+                race=readout[0].split(' ')
+                combat=humanoids.humanoids(partysize,partylevel,race[0])
 
             x=''.join(workingfile)+'\n\n'+encounter+' Event No.: '+str(roll)+\
                 '\n'+''.join(readout)+combat
@@ -123,12 +134,30 @@ def sort(x,author):
         x=x.replace(' ','')
         if x.isdigit():
             update(authpath,0,'Move Speed: {}\n'.format(x))
-            x='Party speed set to: '+str(x)
+            x='Party speed set to: '+str(x) +'. Set number of players with $players.'
         else:
             x='Last time I checked you can only move at positive integers.'
 
+    elif x.startswith('players') and (active == 1):
+        x=x.lstrip('players')
+        x=x.replace(' ','')
+        if x.isdigit():
+            update(authpath,1,'Players: {}\n'.format(x))
+            x='Party size set to: '+str(x)+'. Set level of party with $level.'
+        else:
+            x='Last time I checked you can only have positive players.'
+
+    elif x.startswith('level') and (active == 1):
+        x=x.lstrip('level')
+        x=x.replace(' ','')
+        if x.isdigit():
+            update(authpath,5,'Level: {}\n'.format(x))
+            x='Party level set to: '+str(x)
+        else:
+            x="Listen, they're not gonna make it if they're not at least level 1."
+
     elif x.startswith('camp') and (active == 1):
-        update(authpath, 2, 'Date: {}\n'.format(clock('6:00',0)))
+        update(authpath, 3, 'Date: {}\n'.format(clock('6:00', 0)))
 
 
 
@@ -137,7 +166,7 @@ def sort(x,author):
         x='Run Deleted!'
 
     else:
-        x = 'TODO: Pass "$rhunefaust" error message... Commands are begin,next, speed and close'
+        x = 'TODO: Pass "$rhunefaust" error message... Commands are begin,next, speed, players, level and close'
 
     return x
 
@@ -162,6 +191,16 @@ def update(authpath,line,update):
         workingfile = text_file.readlines()
     text_file.close()
     workingfile[line]=update
+    with open(authpath, "w") as text_file:
+        text_file.writelines(workingfile)
+    text_file.close()
+
+def levelup(authpath):
+    with open(authpath, "r") as text_file:
+        workingfile = text_file.readlines()
+    text_file.close()
+    currentlevel=int(workingfile[5].lstrip('Current Level: '))
+    workingfile[5]=('Current Level: '+str((currentlevel+1)))
     with open(authpath, "w") as text_file:
         text_file.writelines(workingfile)
     text_file.close()

@@ -1,0 +1,6 @@
+Gnoll Patrol
+
+The gnolls move in a tight pack, trampling the foliage as they travel. If they spot the party they will bline through the thicket to start a fight.
+
+
+HUMANOID ENCOUNTER Gnolls

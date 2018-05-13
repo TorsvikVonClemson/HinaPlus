@@ -1,0 +1,5 @@
+Guarded Reading/Writing
+
+In a thicket a party member spots a bit of paper stuck through a branch.
+
+The paper is written using a very old dialect, probably as a sort of code. Passing the check by +5 leads the party to a sizeable stash. Failure gets them horribly lost.

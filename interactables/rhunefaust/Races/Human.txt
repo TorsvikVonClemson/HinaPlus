@@ -1,0 +1,13 @@
+Human
+6
+10
+8
+0
+1D8
+1D6
+1D1
+5
+3
+11
+J,O
+"Major work needs to be done here. Currently a placeholder"

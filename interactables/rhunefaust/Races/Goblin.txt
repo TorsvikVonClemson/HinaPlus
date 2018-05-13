@@ -1,0 +1,13 @@
+Goblin
+6
+10
+8
+-1
+1D6
+1D4
+1D1
+3
+2
+10
+C
+"Goblins have Infravision 60 but gain a -1 to attacks in bright light"

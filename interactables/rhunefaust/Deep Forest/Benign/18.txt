@@ -1,0 +1,7 @@
+Major Religion
+
+The party encounters a weatherworn altar in the distance.
+
+The religous will recognise the statue to be dedicated to a benevolent Elven diety. Offering a prayer will bistow a random effect on the party (TODO:addmore)
+
+Transmute wood to gold

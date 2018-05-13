@@ -1,0 +1,13 @@
+0. RaceName
+1. Hero AC
+2. Henchman AC
+3. HD val
+4. HD add
+5. Hero DMG
+6. Hench DMG
+7. MAA DMG
+8. Hero Speed
+9. Henchman Speed
+10. Morale
+11. Treasure
+12. Notes
