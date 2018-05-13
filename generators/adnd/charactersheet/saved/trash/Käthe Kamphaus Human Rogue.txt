@@ -1,0 +1,13 @@
+5500ClubMStrStr1D6/1D3MeleeB43RapierMStrStr1D6+1/1D8+1Str: 11
+Hit Adj: 0
+Dmg Adj: 0
+Weight Allowed:40
+Max Press: 115
+Open Door:6
+Bend Bar Lift Gate: 2%
+Dex: 12
+Con: 14
+Int: 17
+Wis: 13
+Cha: 15
+2

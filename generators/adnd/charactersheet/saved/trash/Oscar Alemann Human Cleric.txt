@@ -1,0 +1,13 @@
+8100RanseurMStrStr2D4/2D4ReachP/Large78Main-GaucheMStrStr1D4/1D3Str: 12
+Hit Adj: 0
+Dmg Adj: 0
+Weight Allowed:45
+Max Press: 140
+Open Door:7
+Bend Bar Lift Gate: 4%
+Dex: 12
+Con: 14
+Int: 12
+Wis: 11
+Cha: 15
+1
