@@ -70,7 +70,7 @@ def roll(race,playerclass):
                 if p[0]>8:
                     classvalid=1
 
-        elif playerclass=='Paladin':
+        elif playerclass in ['Paladin','Green Knight']:
             if p[0]>=12 and p[2]>=9 and p[4]>=13 and p[5]>=17:
                 classvalid=1
 

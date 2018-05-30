@@ -1,4 +1,4 @@
-Aach
+﻿Aach
 Abegg
 Abend
 Abendroth
@@ -569,7 +569,7 @@ Freund
 Freundel
 Freundlich
 Freytag
-Frič
+Fric
 Fried
 Friedberg
 Friedberger

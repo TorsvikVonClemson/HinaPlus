@@ -5,6 +5,7 @@ Bowyer/Fletcher:Dex-1
 Charioteering:Dex+2
 Endurance:Con
 Gaming:Cha
+Gunnery:Int-2
 Hunting:Wis-1
 Mountaineering:
 Navigation:Int-2

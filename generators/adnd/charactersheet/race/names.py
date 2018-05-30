@@ -12,7 +12,7 @@ def roll(race,gender):
             file = "/generators/adnd/charactersheet/resources/names/germanmalenames.txt"
             path=os.getcwd()+file
             fp=open(path,'r+');
-            with open(path,"r") as text_file:
+            with open(path,"r", encoding='utf8') as text_file:
 
                 firstname=text_file.readlines()
 
@@ -26,7 +26,7 @@ def roll(race,gender):
             file = "/generators/adnd/charactersheet/resources/names/germanfemalenames.txt"
             path=os.getcwd()+file
             fp=open(path,'r+');
-            with open(path,"r") as text_file:
+            with open(path,"r", encoding='utf8') as text_file:
             
                 firstname=text_file.readlines()
 
@@ -39,7 +39,7 @@ def roll(race,gender):
         file = "/generators/adnd/charactersheet/resources/names/germansurnames.txt"
         path=os.getcwd()+file
         fp=open(path,'r+');
-        with open(path,"r") as text_file:
+        with open(path,"r", encoding='utf8') as text_file:
 
             surname=text_file.readlines()
 

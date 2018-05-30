@@ -23,6 +23,12 @@ def roll(playerclass):
         PetPoly=13
         Breath=15
         Spell=12
+    else:
+        ParaPoi=666
+        RSW=666
+        PetPoly=666
+        Breath=666
+        Spell=666
 
     save=[ParaPoi,RSW,PetPoly,Breath,Spell]
 
