@@ -307,26 +307,25 @@ def write(fp):
     if dexmods[2].find('-') != -1:
         dexmods[2] = dexmods[2].lstrip('-')
         c.drawString(-.1 * inch, (xpos + .475) * inch,
-                     str(int(getarmour(find(charsheet, 'Armour:'), 2)) - int(dexmods[2])))
+                     str(int(getarmour(find(charsheet, 'Armour:'), 1)) - int(dexmods[2]) - int(
+                         getarmour(find(charsheet, 'Shield:'), 1))))
     elif dexmods[2].find('+') != -1:
         dexmods[2] = dexmods[2].lstrip('+')
         c.drawString(-.1 * inch, (xpos + .475) * inch,
-                     str(int(getarmour(find(charsheet, 'Armour:'), 2)) + int(dexmods[2])))
+                     str(int(getarmour(find(charsheet, 'Armour:'), 1)) + int(dexmods[2]) - int(
+                         getarmour(find(charsheet, 'Shield:'), 1))))
     else:
-        c.drawString(-.1 * inch, (xpos + .475) * inch, str(int(getarmour(find(charsheet, 'Armour:'), 2))))
-
-    # TODO: check maths for AC
+        c.drawString(-.1 * inch, (xpos + .475) * inch,
+                     str(int(getarmour(find(charsheet, 'Armour:'), 1)) - int(getarmour(find(charsheet, 'Shield:'), 1))))
 
     c.drawString(-.8 * inch, (xpos + .1) * inch, "Flatfoot")
-    if find(charsheet, 'Shield:') == 'None':
-        c.drawString(-.1 * inch, (xpos + .1) * inch, getarmour(find(charsheet, 'Armour:'), 2))
-    else:
-        c.drawString(-.1 * inch, (xpos + .1) * inch, str(int(getarmour(find(charsheet, 'Armour:'), 2)) + 1))
+    c.drawString(-.1 * inch, (xpos + .1) * inch, str(int(getarmour(find(charsheet, 'Armour:'), 1))))
 
     # Column 2 #
 
     c.drawString(1.2 * inch, (xpos + .85) * inch, "Weight:")
-    c.drawString(1.7 * inch, (xpos + .85) * inch, getarmour(find(charsheet, 'Armour:'), 1))  # TODO add shield weight
+    c.drawString(1.7 * inch, (xpos + .85) * inch,
+                 str(int(getarmour(find(charsheet, 'Armour:'), 2)) + int(getarmour(find(charsheet, 'Shield:'), 2))))
 
     c.drawString(.5 * inch, (xpos + .85) * inch, "Armour")
     c.line(.5 * inch, (xpos + .8) * inch, 1 * inch, (xpos + .8) * inch)
@@ -339,7 +338,8 @@ def write(fp):
     c.rect(2.1 * inch, xpos * inch, 5 * inch, 1 * inch)
 
     movementstrings = ['Unencumbered:', 'Light:', 'Moderate:', 'Heavy:', 'Severe:']
-    speedstrings = ['', 'Jog', 'Charge', 'Run', 'Sprint', 'Speed', 'X2', 'X3', 'X4', 'X5', 'Atk Adj.', '0', '+2', '+4',
+    speedstrings = ['', 'Jog', 'Charge', 'Run', 'Sprint', 'Speed', 'X2', 'X3', 'X4', 'X5', 'Atk Adj.', '0', '+2',
+                    '+4',
                     '+8', 'Dmg Adj.', '0', '0', '+1', '+2', 'AC Adj.', 'Flatfoot', '+1', '+3', '+5']
     movestats = movement.roll(find(charsheet, 'Race:'), strengthmods[3])
 
@@ -368,11 +368,10 @@ def write(fp):
     xpos = xpos - .4
     c.rect(-.9 * inch, xpos * inch, 8 * inch, .3 * inch)
 
-    positionlist = [-.8, 1.6, 2.1, 2.8, 3.5, 4.5, 5.5, 6, 7.5]
+    positionlist = [-.8, 1.6, 2.1, 2.8, 3.5, 4.5, 5.5, 6, 6.6]
     weaponstrings = ['Name', 'Rof', 'THAC0', 'Dmg Adj.', 'Damage', 'Range', 'Type', 'Speed', 'Weight']
 
     xpos = xpos + .11
-
     for x in range(0, 9):
         c.drawString(positionlist[x] * inch, xpos * inch, weaponstrings[x])
 
@@ -386,81 +385,80 @@ def write(fp):
         xpos += .11
 
         weapon = find(charsheet, 'Weapon{}:'.format(str(x + 1)))
-        if weapon in ['\n', '']:
-            weapon = 'Blank'
-        weapon.replace(', One-Handed', '')
-        weapon.replace(', Two-Handed', '')
-        weaponspec = weapon + ' Specialist'
+        if weapon not in ['\n', '']:
+            weapon.replace(', One-Handed', '')
+            weapon.replace(', Two-Handed', '')
+            weaponspec = weapon + ' Specialist'
 
-        # -Set THAC0- # # TODO Stop using 20 as a stand in
+            # -Set THAC0- # # TODO Stop using 20 as a stand in
 
-        spec = 0
-        dmg = str(0 + int(strengthmods[1]))
-        rofspec = False
-
-        if weaponspec in proflist:
-            spec = 1
-            dmg = str(2 + int(strengthmods[1]))
+            spec = 0
+            dmg = str(0 + int(strengthmods[1]))
             rofspec = False
 
-        if getweapon(weapon, 9) == 'Dex':
-            thaco = str(20 - spec - int(dexmods[1]))
-        elif getweapon(weapon, 9) == '-':
-            thaco = ''
-        elif getweapon(weapon, 9) == 'Str':
-            thaco = str(20 - spec - int(strengthmods[0]))
-        elif getweapon(weapon, 9) == 'Str(Dex)':
-            thaco = str(20 - spec - int(strengthmods[0]))+'('+str(20 - spec - int(dexmods[1]))+')'
-        else:
-            thaco = 'err'
+            if weaponspec in proflist:
+                spec = 1
+                dmg = str(2 + int(strengthmods[1]))
+                rofspec = True
 
-        # -Set Damage- #
+            if getweapon(weapon, 9) == 'Dex':
+                thaco = str(20 - spec - int(dexmods[1]))
+            elif getweapon(weapon, 9) == '-':
+                thaco = ''
+            elif getweapon(weapon, 9) == 'Str':
+                thaco = str(20 - spec - int(strengthmods[0]))
+            elif getweapon(weapon, 9) == 'Str(Dex)':
+                thaco = str(20 - spec - int(strengthmods[0])) + '(' + str(20 - spec - int(dexmods[1])) + ')'
+            else:
+                thaco = 'err'
 
-        if getweapon(weapon, 9) == '-':  # Override for ranged weapons
-            dmg = ''
+            # -Set Damage- #
 
-        # -Set RoF- # # TODO Fix for multiple levels, may be long enough to write a seperate function
+            if getweapon(weapon, 9) == '-':  # Override for ranged weapons
+                dmg = ''
 
-        if getweapon(weapon, 6) == 'Melee':
-            if rofspec:
-                rof = '3/2'
-            else:
-                rof = '1'
-        elif getweapon(weapon, 6) == 'Heavy':
-            if rofspec:
-                rof = '1/2'
-            else:
-                rof = '1/2'
-        elif getweapon(weapon, 6) == 'Light':
-            if rofspec:
-                rof = '1'
-            else:
-                rof = '1'
-        elif getweapon(weapon, 6) == 'Dagger':
-            if rofspec:
-                rof = '3'
-            else:
-                rof = '2'
-        elif getweapon(weapon, 6) == 'Dart':
-            if rofspec:
-                rof = '4'
-            else:
-                rof = '3'
-        else:
-            rof = ''
+            # -Set RoF- # # TODO Fix for multiple levels, may be long enough to write a seperate function
 
-        c.drawString(positionlist[0] * inch, xpos * inch, weapon)
-        c.drawString(positionlist[1] * inch, xpos * inch, rof)
-        c.drawString(positionlist[2] * inch, xpos * inch, thaco)
-        c.drawString(positionlist[3] * inch, xpos * inch, dmg)
-        c.drawString(positionlist[4] * inch, xpos * inch, getweapon(weapon, 5))
-        c.drawString(positionlist[5] * inch, xpos * inch, getweapon(weapon, 7))
-        c.drawString(positionlist[6] * inch, xpos * inch, getweapon(weapon, 3))
-        c.drawString(positionlist[7] * inch, xpos * inch, getweapon(weapon, 4))
-        c.drawString(positionlist[8] * inch, xpos * inch, getweapon(weapon, 1))
+            if getweapon(weapon, 6) == 'Melee':
+                if rofspec:
+                    rof = '3/2'
+                else:
+                    rof = '1'
+            elif getweapon(weapon, 6) == 'Heavy':
+                if rofspec:
+                    rof = '1/2'
+                else:
+                    rof = '1/2'
+            elif getweapon(weapon, 6) == 'Light':
+                if rofspec:
+                    rof = '1'
+                else:
+                    rof = '1'
+            elif getweapon(weapon, 6) == 'Dagger':
+                if rofspec:
+                    rof = '3'
+                else:
+                    rof = '2'
+            elif getweapon(weapon, 6) == 'Dart':
+                if rofspec:
+                    rof = '4'
+                else:
+                    rof = '3'
+            else:
+                rof = getweapon(weapon, 6)
+
+            c.drawString(positionlist[0] * inch, xpos * inch, weapon)
+            c.drawString(positionlist[1] * inch, xpos * inch, rof)
+            c.drawString(positionlist[2] * inch, xpos * inch, thaco)
+            c.drawString(positionlist[3] * inch, xpos * inch, dmg)
+            c.drawString(positionlist[4] * inch, xpos * inch, getweapon(weapon, 5))
+            c.drawString(positionlist[5] * inch, xpos * inch, getweapon(weapon, 7))
+            c.drawString(positionlist[6] * inch, xpos * inch, getweapon(weapon, 3))
+            c.drawString(positionlist[7] * inch, xpos * inch, getweapon(weapon, 4))
+            c.drawString(positionlist[8] * inch, xpos * inch, getweapon(weapon, 1))
         xpos += .04
 
-    # ---Grid Lines---#
+        # ---Grid Lines--- #
 
     xpos = xpos - .15
     c.line(1.5 * inch, xpos * inch, 1.5 * inch, (xpos + 1.8) * inch)  # Name
@@ -476,7 +474,7 @@ def write(fp):
     # Saves #
     # ----- #
 
-    xpos = xpos - 1.7
+    xpos = xpos - 2
     c.rect(-.9 * inch, xpos * inch, 2 * inch, 1.65 * inch)
 
     c.drawCentredString(.15 * inch, (xpos + 1.5) * inch, "Saving Throws")
@@ -493,7 +491,7 @@ def write(fp):
 
     # Poison#
 
-    save = saves.roll(find(charsheet, 'Class:').rstrip('n'))
+    save = saves.roll(find(charsheet, 'Class:').rstrip('\n'))
 
     if conmods[3].find('-') != -1:
         conmods[3] = conmods[3].lstrip('-')
@@ -519,7 +517,7 @@ def write(fp):
     elif dexmods[0].find('+') != -1:
         dexmods[0] = dexmods[0].lstrip('+')
         react = react - int(dexmods[0])
-    # cha#
+    # cha #
     if chamods[2].find('-') != -1:
         chamods[2] = chamods[2].lstrip('-')
         react = react + int(chamods[2])
@@ -537,11 +535,104 @@ def write(fp):
     c.drawString(.6 * inch, (xpos + .3) * inch, str(react))
     c.drawString(.6 * inch, (xpos + .1) * inch, '0')
 
-    # -----------#
-    # Equipment #
-    # -----------#
+    # ---------------- #
+    # Begin Ammo Table #
+    # ---------------- #
 
-    c.rect(1.2 * inch, xpos * inch, 5.85 * inch, 1.65 * inch)
+    c.drawCentredString(3.9 * inch, (xpos + 1.8) * inch, "Ammunition")
+    for x in range(0, 5):
+        c.rect(1.2 * inch, (xpos + x * .33) * inch, 5.9 * inch, .33 * inch)
+
+    # -------------- #
+    # Begin Prof Box #
+    # -------------- #
+
+    xpos = xpos - 3.1
+    c.drawString(1 * inch, (xpos + 2.7) * inch, "Proficiencies")
+    c.rect(-.9 * inch, xpos * inch, 4.6 * inch, 2.85 * inch)
+    profskill = ['', '']
+
+    for x in range(0, 2):
+        for y in range(0, 10):
+            if ':' in proflist[y + (x * 10)]:
+                profskill = proflist[y + x * 10].split(':')
+            else:
+                profskill[0] = proflist[y + x * 10]
+            profskill[1] = ''
+            c.drawString((-.8 + 2.2 * x) * inch, ((xpos + 2.5) - (y * .25)) * inch, profskill[0])
+            c.drawString((.7 + 2.2 * x) * inch, ((xpos + 2.5) - (y * .25)) * inch, profskill[1])
+            c.line((-.8 + 2.2 * x) * inch, ((xpos + 2.45) - (y * .25)) * inch, (1.2 + 2.2 * x) * inch,
+                   ((xpos + 2.45) - (y * .25)) * inch)
+
+    # ----------------- #
+    # Begin Special Box #
+    # ----------------- #
+
+    c.drawString(4.9 * inch, (xpos + 2.7) * inch, "Special Abilities")
+    c.rect(3.8 * inch, xpos * inch, 3.4 * inch, 2.85 * inch)
+
+    # ---Fill With Special Rules---#
+    i = 0
+    specialweapons = ['Awl Pike', 'Bariche', 'Bec De Corbin', 'Bill', 'Bola', 'Caltrop', 'Fauchard', 'Glaive',
+                      'Lasso',
+                      'Long Spear', 'Spear', 'Main-Gauche', 'Mancatcher', 'Military Fork', 'Net', 'Parrying Dagger',
+                      'Partisian', 'Ranseur', 'Sap', 'Scimitar', 'Scourge', 'Spear', 'Spetum', 'Staff Sling',
+                      'Stiletto', 'Volgue', 'Whip']
+    while i < len(proflist):
+        if proflist[i].replace(' Specialist', '') in specialweapons:
+            skilllist.append(proflist[i])
+        i += 1
+
+    for x in range(0, 2):
+        for y in range(0, 10):
+            c.drawString((3.9 + x * 1.6) * inch, (xpos + 2.5 - y * .25) * inch, skilllist[x * 10 + y])
+            c.line((3.9 + x * 1.6) * inch, (xpos + 2.45 - y * .25) * inch, (5.4 + x * 1.6) * inch,
+                   (xpos + 2.45 - y * .25) * inch)
+
+    # ------------ #
+    # Begin Page 2 #
+    # ------------ #
+
+    c.showPage()  # finishes writing on current page, starts a new page if more is added
+
+    c.translate(inch, inch)  # moves origin from bottom left to top left
+    c.setFont("Helvetica", 10)
+
+    # ------ #
+    # Spells #
+    # ------ #
+
+    c.rect(-.9 * inch, 7.65 * inch, 8 * inch, 2.85 * inch)
+    c.drawString(-.8 * inch, 10.25 * inch, 'Spells Per Day:')
+
+    # TODO create a function to fill out spells
+    spellsperday = ''
+    spelllevel = ['', '', '', '', '', '', '']
+
+    if find(charsheet, 'Class:') == 'Wizard':
+        spellsperday = '1'
+    if find(charsheet, 'Class:') == 'Cleric':
+        startingspell = '1'
+
+        i = 0
+        spelllevel[0] = startingspell
+        while i < len(spelllevel):
+            spellsperday = spellsperday + spelllevel[i] + '/'
+            i += 1
+
+    c.drawString(.4 * inch, 10.25 * inch, spellsperday)
+
+    for x in range(0, 3):
+        for y in range(0, 9):
+            c.drawString((-.8 + 2.6 * x) * inch, (10 - .25 * y) * inch, spelllist[x * 10 + y + 1])
+            c.line((-.8 + 2.6 * x) * inch, (9.95 - .25 * y) * inch, (1.6 + 2.6 * x) * inch, (9.95 - .25 * y) * inch)
+
+    # --------- #
+    # Equipment #
+    # --------- #
+
+    xpos = 5.9
+    c.rect(1.2 * inch, xpos * inch, 5.9 * inch, 1.65 * inch)
 
     platinum = find(charsheet, 'Platinum:')
     gold = find(charsheet, 'Gold:')
@@ -579,100 +670,18 @@ def write(fp):
         c.drawString((4.3 + x * 2.2) * inch, (xpos + 1.5) * inch, "Wgt.")
         for y in range(0, 5):
             itemquantity = find(charsheet, 'Item{}:'.format(1 + x * 5 + y)).split(':')
-            c.line((2.5 + 2.2 * x) * inch, (xpos + 1.3 - .25 * y) * inch, (4.45 + 2.2 * x) * inch, (xpos + 1.3 - .25 * y) * inch)
+            c.line((2.5 + 2.2 * x) * inch, (xpos + 1.3 - .25 * y) * inch, (4.45 + 2.2 * x) * inch,
+                   (xpos + 1.3 - .25 * y) * inch)
             if itemquantity[0] not in ['\n', '']:
                 c.drawString((2.5 + 2.2 * x) * inch, (xpos + 1.35 - .25 * y) * inch, itemquantity[0])
                 c.drawString((4 + 2.2 * x) * inch, (xpos + 1.35 - .25 * y) * inch, itemquantity[1])
                 c.drawString((4.3 + 2.2 * x) * inch, (xpos + 1.35 - .25 * y) * inch, getitem(itemquantity[0], 1))
 
-    # ----------------#
-    # Begin Prof Box #
-    # ----------------#
-
-    xpos = xpos - 3.1
-    c.drawString(1 * inch, (xpos + 2.7) * inch, "Proficiencies")
-    c.rect(-.9 * inch, xpos * inch, 4.6 * inch, 2.85 * inch)
-    profskill = ['', '']
-
-    for x in range(0, 2):
-        for y in range(0, 10):
-            if ':' in proflist[y + (x * 10)]:
-                profskill = proflist[y + x * 10].split(':')
-            else:
-                profskill[0] = proflist[y + x * 10]
-                profskill[1] = ''
-            c.drawString((-.8 + 2.2 * x) * inch, ((xpos + 2.5) - (y * .25)) * inch, profskill[0])
-            c.drawString((.7 + 2.2 * x) * inch, ((xpos + 2.5) - (y * .25)) * inch, profskill[1])
-            c.line((-.8 + 2.2 * x) * inch, ((xpos + 2.45) - (y * .25)) * inch, (1.2 + 2.2 * x) * inch,
-                   ((xpos + 2.45) - (y * .25)) * inch)
-
-    # ----------------- #
-    # Begin Special Box #
-    # ----------------- #
-
-    c.drawString(4.9 * inch, (xpos + 2.7) * inch, "Special Abilities")
-    c.rect(3.8 * inch, xpos * inch, 3.4 * inch, 2.85 * inch)
-
-    # ---Fill With Special Rules---#
-    i = 0
-    specialweapons = ['Awl Pike', 'Bariche', 'Bec De Corbin', 'Bill', 'Bola', 'Caltrop', 'Fauchard', 'Glaive', 'Lasso',
-                      'Long Spear', 'Spear', 'Main-Gauche', 'Mancatcher', 'Military Fork', 'Net', 'Parrying Dagger',
-                      'Partisian', 'Ranseur', 'Sap', 'Scimitar', 'Scourge', 'Spear', 'Spetum', 'Staff Sling',
-                      'Stiletto', 'Volgue', 'Whip']
-    while i < len(proflist):
-        if proflist[i].replace(' Specialist', '') in specialweapons:
-            skilllist.append(proflist[i])
-        i += 1
-
-    for x in range(0, 2):
-        for y in range(0, 10):
-            c.drawString((3.9 + x * 1.6) * inch, (xpos + 2.5 - y * .25) * inch, skilllist[x * 10 + y])
-            c.line((3.9 + x * 1.6) * inch, (xpos + 2.45 - y * .25) * inch, (5.4 + x * 1.6) * inch,
-                   (xpos + 2.45 - y * .25) * inch)
-
-    # ------------ #
-    # Begin Page 2 #
-    # ------------ #
-
-    c.showPage()  # finishes writing on current page, starts a new page if more is added
-
-    c.translate(inch, inch)  # moves origin from bottom left to top left
-    c.setFont("Helvetica", 10)
-
-    # ------ #
-    # Spells #
-    # ------ #
-
-    c.rect(-.9 * inch, 7.65 * inch, 8 * inch, 2.85 * inch)
-    c.drawString(-.8 * inch, 10.25 * inch, 'Spells Per Day:')
-
-    # TODO create a function to fill out spells
-    spellsperday = ''
-    spelllevel=['','','','','','','']
-
-    if find(charsheet, 'Class:') == 'Wizard':
-        spellsperday = '1'
-    if find(charsheet, 'Class:') == 'Cleric':
-        startingspell = '1'
-
-        i = 0
-        spelllevel[0] = startingspell
-        while i < len(spelllevel):
-            spellsperday = spellsperday + spelllevel[i] + '/'
-            i += 1
-
-    c.drawString(.4 * inch, 10.25 * inch, spellsperday)
-
-    # ---Column 1---#
-    for x in range(0, 3):
-        for y in range(0, 9):
-            c.drawString((-.8 + 2.6 * x) * inch, (10 - .25 * y) * inch, spelllist[x * 10 + y + 1])
-            c.line((-.8 + 2.6 * x) * inch, (9.95 - .25 * y) * inch, (1.6 + 2.6 * x) * inch, (9.95 - .25 * y) * inch)
-    # --------------------------#
+    # ------------------------ #
     # Rules and Fluff Function #
-    # --------------------------#
+    # ------------------------ #
 
-    xpos = 0
+    xpos = 12
     inc = 0
     specialweapons = ['Awl Pike', 'Bariche', 'Bec De Corbin', 'Bill', 'Bola', 'Caltrop', 'Fauchard', 'Glaive', 'Lasso',
                       'Long Spear', 'Spear', 'Main-Gauche', 'Mancatcher', 'Military Fork', 'Net', 'Parrying Dagger',

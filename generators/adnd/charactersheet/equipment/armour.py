@@ -56,8 +56,8 @@ def choosearmour(dosh, playerclass, god):
 
     return buy
 
-def chooseshield(dosh, weaponlist):
 
+def chooseshield(dosh, weaponlist):
     # Set best possible shield using numbers, 4 for tower and 0 for none
     # 1.5 Hand weapons get body shield
     # weapons with damage above 4.5 get medium
@@ -74,17 +74,17 @@ def chooseshield(dosh, weaponlist):
     buckler = ["Short Bow", "Composite Short Bow", "Hand Crossbow", "Light Crossbow", "Dagger", "Scourge", "Sling",
                "Whip"]
 
-    i = 0
     shieldvalue = 0
 
-    while i > len(weaponlist):
-        if weaponlist[i] in bodyshield and dosh >= 10000:
+    for x in range(0, len(weaponlist)):
+        check = weaponlist[x].rstrip('\n')
+        if check in bodyshield and dosh >= 10000:
             shieldvalue = 4
-        elif weaponlist[i] in mediumshield and dosh >= 7000 and shieldvalue < 4:
+        elif check in mediumshield and dosh >= 7000 and shieldvalue < 4:
             shieldvalue = 3
-        elif weaponlist[i] in smallshield and dosh >= 3000 and shieldvalue < 3:
+        elif check in smallshield and dosh >= 3000 and shieldvalue < 3:
             shieldvalue = 2
-        elif weaponlist[i] in buckler and dosh >= 1000 and shieldvalue < 2:
+        elif check in buckler and dosh >= 1000 and shieldvalue < 2:
             shieldvalue = 1
 
     if shieldvalue == 4:
@@ -96,7 +96,7 @@ def chooseshield(dosh, weaponlist):
     elif shieldvalue == 1:
         shield = "Small Shield"
     else:
-        shield="None"
+        shield = "None"
 
     return shield
 
@@ -111,6 +111,3 @@ def purchase(dosh, armour):
     dosh -= int(armourstats[0].rstrip("\n"))
 
     return dosh
-
-
-

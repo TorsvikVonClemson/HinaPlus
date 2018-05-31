@@ -1,5 +1,6 @@
 import os
 
+# TODO: Fix Darts
 
 def roll(dosh, wp):
     i = 0
@@ -42,22 +43,22 @@ def roll(dosh, wp):
                 weapons.append(twohand)
 
             # For Weapons with Ammo
-            if file in arrows and not hasarrows:
-                weapons.append("Sheaf Arrow")
-                weapons.append("Flight Arrow")
-                hasarrows = True
-
-            if file in darts and not hasdarts:
-                weapons.append("Dart, Needle")
-                weapons.append("Dart, Barbed")
-                hasdarts = True
-
-            if file in quarrel:
-                weapons.append(file.rstrip("Crossbow") + "Quarrel")
-
-            if file == "Sling":
-                weapons.append("Sling Bullet")
-                weapons.append("Sling Stone")
+            # if file in arrows and not hasarrows:
+            #     weapons.append("Sheaf Arrow")
+            #     weapons.append("Flight Arrow")
+            #     hasarrows = True
+            #
+            # if file in darts and not hasdarts:
+            #     weapons.append("Dart, Needle")
+            #     weapons.append("Dart, Barbed")
+            #     hasdarts = True
+            #
+            # if file in quarrel:
+            #     weapons.append(file.rstrip("Crossbow") + "Quarrel")
+            #
+            # if file == "Sling":
+            #     weapons.append("Sling Bullet")
+            #     weapons.append("Sling Stone")
 
         i += 1
 
