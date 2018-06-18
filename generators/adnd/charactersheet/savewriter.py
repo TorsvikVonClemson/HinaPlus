@@ -300,3 +300,15 @@ def save(header, attribs, hp, armour, shield, weaponlist, mint, miscequip, profs
         text_file.write('Spell28:{}\n'.format(spell28))
         text_file.write('Spell29:{}\n'.format(spell29))
         text_file.write('Spell30:{}\n\n'.format(spell30))
+
+    # --- Print Relationships --- #
+
+        text_file.write('#-------------#\n')
+        text_file.write('#Relationships#\n')
+        text_file.write('#-------------#\n\n')
+
+        text_file.write('Relationships1:\n')
+        text_file.write('Relationships2:\n')
+        text_file.write('Relationships3:\n')
+        text_file.write('Relationships4:\n')
+        text_file.write('Relationships5:\n')

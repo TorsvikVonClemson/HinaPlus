@@ -9,6 +9,9 @@ from generators.adnd.charactersheet.classes import wisdom
 from generators.adnd.charactersheet.classes import charisma
 from generators.adnd.charactersheet.equipment import movement
 from generators.adnd.charactersheet.classes import saves
+from generators.adnd.charactersheet.classes import thaco
+from generators.adnd.charactersheet.classes import rof
+from generators.adnd.charactersheet.classes import spellprogression
 
 import os
 
@@ -324,8 +327,9 @@ def write(fp):
     # Column 2 #
 
     c.drawString(1.2 * inch, (xpos + .85) * inch, "Weight:")
+    armourweight = int(getarmour(find(charsheet, 'Armour:'), 2)) + int(getarmour(find(charsheet, 'Shield:'), 2))
     c.drawString(1.7 * inch, (xpos + .85) * inch,
-                 str(int(getarmour(find(charsheet, 'Armour:'), 2)) + int(getarmour(find(charsheet, 'Shield:'), 2))))
+                 str(armourweight))
 
     c.drawString(.5 * inch, (xpos + .85) * inch, "Armour")
     c.line(.5 * inch, (xpos + .8) * inch, 1 * inch, (xpos + .8) * inch)
@@ -390,11 +394,12 @@ def write(fp):
             weapon.replace(', Two-Handed', '')
             weaponspec = weapon + ' Specialist'
 
-            # -Set THAC0- # # TODO Stop using 20 as a stand in
+            # -Set THAC0- #
 
             spec = 0
             dmg = str(0 + int(strengthmods[1]))
             rofspec = False
+            leveledthaco = thaco.find(find(charsheet, 'Class:'), int(find(charsheet, 'Level:')))
 
             if weaponspec in proflist:
                 spec = 1
@@ -402,54 +407,29 @@ def write(fp):
                 rofspec = True
 
             if getweapon(weapon, 9) == 'Dex':
-                thaco = str(20 - spec - int(dexmods[1]))
+                playerthaco = str(leveledthaco - spec - int(dexmods[1]))
             elif getweapon(weapon, 9) == '-':
-                thaco = ''
+                playerthaco = ''
             elif getweapon(weapon, 9) == 'Str':
-                thaco = str(20 - spec - int(strengthmods[0]))
+                playerthaco = str(leveledthaco - spec - int(strengthmods[0]))
             elif getweapon(weapon, 9) == 'Str(Dex)':
-                thaco = str(20 - spec - int(strengthmods[0])) + '(' + str(20 - spec - int(dexmods[1])) + ')'
+                playerthaco = str(leveledthaco - spec - int(strengthmods[0])) + '(' + str(
+                    20 - spec - int(dexmods[1])) + ')'
             else:
-                thaco = 'err'
+                playerthaco = 'err'
 
             # -Set Damage- #
 
             if getweapon(weapon, 9) == '-':  # Override for ranged weapons
                 dmg = ''
 
-            # -Set RoF- # # TODO Fix for multiple levels, may be long enough to write a seperate function
+            # -Set RoF- #
 
-            if getweapon(weapon, 6) == 'Melee':
-                if rofspec:
-                    rof = '3/2'
-                else:
-                    rof = '1'
-            elif getweapon(weapon, 6) == 'Heavy':
-                if rofspec:
-                    rof = '1/2'
-                else:
-                    rof = '1/2'
-            elif getweapon(weapon, 6) == 'Light':
-                if rofspec:
-                    rof = '1'
-                else:
-                    rof = '1'
-            elif getweapon(weapon, 6) == 'Dagger':
-                if rofspec:
-                    rof = '3'
-                else:
-                    rof = '2'
-            elif getweapon(weapon, 6) == 'Dart':
-                if rofspec:
-                    rof = '4'
-                else:
-                    rof = '3'
-            else:
-                rof = getweapon(weapon, 6)
+            playerrof = rof.find(getweapon(weapon, 6), rofspec, int(find(charsheet, 'Level:')))
 
             c.drawString(positionlist[0] * inch, xpos * inch, weapon)
-            c.drawString(positionlist[1] * inch, xpos * inch, rof)
-            c.drawString(positionlist[2] * inch, xpos * inch, thaco)
+            c.drawString(positionlist[1] * inch, xpos * inch, playerrof)
+            c.drawString(positionlist[2] * inch, xpos * inch, playerthaco)
             c.drawString(positionlist[3] * inch, xpos * inch, dmg)
             c.drawString(positionlist[4] * inch, xpos * inch, getweapon(weapon, 5))
             c.drawString(positionlist[5] * inch, xpos * inch, getweapon(weapon, 7))
@@ -538,10 +518,45 @@ def write(fp):
     # ---------------- #
     # Begin Ammo Table #
     # ---------------- #
+    positionlist = [1.3, 4, 5.2, 6, 6.6]
+    posnames = ['Name', 'Dmg', 'Range', 'Weight', 'Price']
+    ammolist = []
+    arrows = ["Composite Long Bow", "Composite Short Bow", "Long Bow", "Short Bow"]
+    darts = ["Blowgun", "Darts"]
+    quarrel = ["Hand Crossbow", "Heavy Crossbow", "Light Crossbow"]
+    havearrows = False
+    havedarts = False
+    for x in range(0, 5):
+        weapon = find(charsheet, 'Weapon{}:'.format(str(x + 1)))
+        if weapon in arrows and not havearrows:
+            ammolist.append('Flight Arrow')
+            ammolist.append('Sheaf Arrow')
+            havearrows = True
+        elif weapon in darts and not havedarts:
+            ammolist.append('Needle Dart')
+            ammolist.append('Barbed Dart')
+            havedarts = True
+        elif weapon in quarrel:
+            ammolist.append((weapon + ' Quarrel').replace(' Crossbow', ''))
+        elif weapon == 'Sling':
+            ammolist.append('Sling Bullet')
+            ammolist.append('Sling Stone')
+    while len(ammolist) < 5:
+        ammolist.append('')
 
     c.drawCentredString(3.9 * inch, (xpos + 1.8) * inch, "Ammunition")
     for x in range(0, 5):
         c.rect(1.2 * inch, (xpos + x * .33) * inch, 5.9 * inch, .33 * inch)
+        c.drawString(positionlist[0] * inch, (xpos + 1.35 - (x + 1) * .33) * inch, ammolist[x])
+        if ammolist[x] != '':
+            c.drawString(positionlist[1] * inch, (xpos + 1.35 - (x + 1) * .33) * inch, getweapon(ammolist[x], 5))
+            c.drawString(positionlist[2] * inch, (xpos + 1.35 - (x + 1) * .33) * inch, getweapon(ammolist[x], 7))
+            c.drawString(positionlist[3] * inch, (xpos + 1.35 - (x + 1) * .33) * inch, getweapon(ammolist[x], 1))
+            c.drawString(positionlist[4] * inch, (xpos + 1.35 - (x + 1) * .33) * inch, getweapon(ammolist[x], 0))
+
+    for x in range(0, 5):
+        c.drawString(positionlist[x] * inch, (xpos + 1.4) * inch, posnames[x])
+        c.line((positionlist[x] - .1) * inch, xpos * inch, (positionlist[x] - .1) * inch, (xpos + 1.65) * inch)
 
     # -------------- #
     # Begin Prof Box #
@@ -605,20 +620,8 @@ def write(fp):
     c.rect(-.9 * inch, 7.65 * inch, 8 * inch, 2.85 * inch)
     c.drawString(-.8 * inch, 10.25 * inch, 'Spells Per Day:')
 
-    # TODO create a function to fill out spells
-    spellsperday = ''
-    spelllevel = ['', '', '', '', '', '', '']
-
-    if find(charsheet, 'Class:') == 'Wizard':
-        spellsperday = '1'
-    if find(charsheet, 'Class:') == 'Cleric':
-        startingspell = '1'
-
-        i = 0
-        spelllevel[0] = startingspell
-        while i < len(spelllevel):
-            spellsperday = spellsperday + spelllevel[i] + '/'
-            i += 1
+    spd = spellprogression.find(find(charsheet, 'Class:'), find(charsheet, 'Level:'), find(charsheet, 'Wisdom:'))
+    spellsperday = '/'.join(spd)
 
     c.drawString(.4 * inch, 10.25 * inch, spellsperday)
 
@@ -644,7 +647,7 @@ def write(fp):
     # ---Wealth Column---#
 
     c.drawString(1.3 * inch, (xpos + 1.4) * inch, "Platinum:")
-    c.drawString(2 * inch, (xpos + 1.4) * inch, "0")
+    c.drawString(2 * inch, (xpos + 1.4) * inch, str(platinum))
 
     c.drawString(1.3 * inch, (xpos + 1.15) * inch, "Gold:")
     c.drawString(2 * inch, (xpos + 1.15) * inch, str(gold))
@@ -655,14 +658,12 @@ def write(fp):
     c.drawString(1.3 * inch, (xpos + .65) * inch, "Copper:")
     c.drawString(2 * inch, (xpos + .65) * inch, str(copper))
 
+    c.drawString(1.3 * inch, (xpos + .4) * inch, "Iron:")
+    c.drawString(2 * inch, (xpos + .4) * inch, str(iron))
+
     c.drawString(1.3 * inch, (xpos + .05) * inch, "Weight")
 
     # Remove Rounding from Float#
-    weight = weight * 1000
-    top = int(weight / 1000)
-    bottom = int(weight) % 1000
-
-    c.drawString(2 * inch, (xpos + .05) * inch, (str(top) + '.' + str(bottom)))
 
     for x in range(0, 2):
         c.drawString((2.5 + x * 2.2) * inch, (xpos + 1.5) * inch, "Item:")
@@ -676,6 +677,29 @@ def write(fp):
                 c.drawString((2.5 + 2.2 * x) * inch, (xpos + 1.35 - .25 * y) * inch, itemquantity[0])
                 c.drawString((4 + 2.2 * x) * inch, (xpos + 1.35 - .25 * y) * inch, itemquantity[1])
                 c.drawString((4.3 + 2.2 * x) * inch, (xpos + 1.35 - .25 * y) * inch, getitem(itemquantity[0], 1))
+                weight += float(itemquantity[1]) * float(getitem(itemquantity[0], 1))
+
+    weight += armourweight
+
+    weight = weight * 1000
+    top = int(weight / 1000)
+    bottom = int(weight) % 1000
+
+    c.drawString(2 * inch, (xpos + .05) * inch, (str(top) + '.' + str(bottom)))
+
+    c.rect(-.9 * inch, xpos * inch, 2 * inch, 1.65 * inch)
+
+    # ------------- #
+    # Relationships #
+    # ------------- #
+
+    relationships = collectlist(charsheet, 'Relationships')
+
+    c.drawCentredString(.15 * inch, (xpos + 1.5) * inch, 'Relationships')
+    for x in range(0, 5):
+        c.line((-.8) * inch, (xpos + 1.2 - .25 * x) * inch, (1) * inch,
+               (xpos + 1.2 - .25 * x) * inch)
+        c.drawString((-.8) * inch, (xpos + 1.25 - .25 * x) * inch, relationships[x])
 
     # ------------------------ #
     # Rules and Fluff Function #

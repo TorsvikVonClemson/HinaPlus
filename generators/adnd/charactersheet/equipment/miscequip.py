@@ -70,7 +70,7 @@ def roll(dosh, playerclass, weightlimit, weaponlist, playerarmour, playershield,
     if 'Tailoring' in proficiencies:
         shoppinglist += getlist("/generators/adnd/charactersheet/resources/equipment/misc/{}.txt", 'Tailoring')
 
-    while failures < 10:
+    while failures < 5:
         item = random.choice(shoppinglist).rstrip('\n')
         purchasestats = getlist("/generators/adnd/charactersheet/resources/equipment/misc/treasury/{}.txt", item)
         if int(purchasestats[0]) * int(purchasestats[2]) < dosh and float(purchasestats[1]) * int(

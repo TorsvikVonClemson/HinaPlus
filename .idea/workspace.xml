@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ede6c077-c66b-4769-a8b5-2a1135d1bff2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+    <list default="true" id="ede6c077-c66b-4769-a8b5-2a1135d1bff2" name="Default" comment="Covered all TODOs in the pdf writer.&#10;Added the relationships table and implementations.&#10;Reorganized the gem roller to prepare for new loot tables.&#10;Probably some other stuff.">
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/adnd/charactersheet/classes/rof.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/adnd/charactersheet/classes/thaco.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/adnd/charactersheet/update.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/generators/adnd/charactersheet/equipment/armour.py" afterPath="$PROJECT_DIR$/generators/adnd/charactersheet/equipment/armour.py" />
+      <change beforePath="$PROJECT_DIR$/generators/adnd/adndhub.py" afterPath="$PROJECT_DIR$/generators/adnd/adndhub.py" />
+      <change beforePath="$PROJECT_DIR$/generators/adnd/charactersheet/equipment/miscequip.py" afterPath="$PROJECT_DIR$/generators/adnd/charactersheet/equipment/miscequip.py" />
       <change beforePath="$PROJECT_DIR$/generators/adnd/charactersheet/equipment/weapons.py" afterPath="$PROJECT_DIR$/generators/adnd/charactersheet/equipment/weapons.py" />
       <change beforePath="$PROJECT_DIR$/generators/adnd/charactersheet/pdfwriter.py" afterPath="$PROJECT_DIR$/generators/adnd/charactersheet/pdfwriter.py" />
+      <change beforePath="$PROJECT_DIR$/generators/adnd/charactersheet/savewriter.py" afterPath="$PROJECT_DIR$/generators/adnd/charactersheet/savewriter.py" />
+      <change beforePath="$PROJECT_DIR$/generators/hub.py" afterPath="$PROJECT_DIR$/generators/hub.py" />
+      <change beforePath="$PROJECT_DIR$/generators/loot/fancy.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/generators/loot/gem.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/generators/loot/gem.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/generators/loot/jewel.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/generators/loot/ornamental.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/generators/loot/precious.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/generators/loot/semiprecious.txt" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +32,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="168" column="4" lean-forward="false" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="4" />
+            <state relative-caret-position="2540">
+              <caret line="164" column="99" lean-forward="false" selection-start-line="164" selection-start-column="56" selection-end-line="164" selection-end-column="99" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -33,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/pdfwriter.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="443" column="29" lean-forward="true" selection-start-line="443" selection-start-column="29" selection-end-line="443" selection-end-column="29" />
+              <caret line="634" column="17" lean-forward="false" selection-start-line="634" selection-start-column="17" selection-end-line="634" selection-end-column="17" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -41,82 +53,76 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dexterity.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/classes/dexterity.py">
+      <file leaf-file-name="savewriter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/savewriter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="6260">
+              <caret line="313" column="39" lean-forward="false" selection-start-line="313" selection-start-column="39" selection-end-line="313" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constitution.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/classes/constitution.py">
+      <file leaf-file-name="rof.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/classes/rof.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1700">
-              <caret line="85" column="25" lean-forward="false" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
+            <state relative-caret-position="940">
+              <caret line="47" column="27" lean-forward="false" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="saves.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/classes/saves.py">
+      <file leaf-file-name="adndhub.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generators/adnd/adndhub.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+            <state relative-caret-position="160">
+              <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/update.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="armour.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/equipment/armour.py">
+      <file leaf-file-name="hub.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generators/hub.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="84" column="47" lean-forward="false" selection-start-line="84" selection-start-column="47" selection-end-line="84" selection-end-column="47" />
+            <state relative-caret-position="20">
+              <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="textobject.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files/Python36/Lib/site-packages/reportlab/pdfgen/textobject.py">
+      <file leaf-file-name="fancy.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generators/loot/gems/fancy.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_bootlocale.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files/Python36/Lib/_bootlocale.py">
+      <file leaf-file-name="gem.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generators/loot/gems/gem.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="codecs.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files/Python36/Lib/codecs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="weapons.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/equipment/weapons.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="-415">
+              <caret line="113" column="18" lean-forward="true" selection-start-line="113" selection-start-column="18" selection-end-line="113" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,6 +152,10 @@
       <find>attributes[24]</find>
       <find>attributes[31]</find>
       <find>weaponlist[i]</find>
+      <find>print</find>
+      <find>rofspec</find>
+      <find>Melee</find>
+      <find>rofval.replace</find>
     </findStrings>
     <replaceStrings>
       <replace>weapon</replace>
@@ -161,6 +171,10 @@
       <replace>wismods[0]</replace>
       <replace>chamods[2]</replace>
       <replace>check</replace>
+      <replace>player</replace>
+      <replace>spec</replace>
+      <replace>Dart</replace>
+      <replace>rofval = rofval.replace</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -174,25 +188,31 @@
         <option value="$PROJECT_DIR$/generators/adnd/charactersheet/resources/weapon proficiencies/Fighter.txt" />
         <option value="$PROJECT_DIR$/generators/adnd/charactersheet/classes/attribute.py" />
         <option value="$PROJECT_DIR$/generators/adnd/charactersheet/classes/hitdie.py" />
-        <option value="$PROJECT_DIR$/generators/adnd/charactersheet/savewriter.py" />
         <option value="$PROJECT_DIR$/generators/adnd/charactersheet/classes/proficiencies.py" />
-        <option value="$PROJECT_DIR$/generators/adnd/adndhub.py" />
         <option value="$PROJECT_DIR$/generators/adnd/charactersheet/classes/dosh.py" />
         <option value="$PROJECT_DIR$/generators/adnd/charactersheet/classes/wp.py" />
-        <option value="$PROJECT_DIR$/generators/adnd/charactersheet/equipment/miscequip.py" />
         <option value="$PROJECT_DIR$/generators/adnd/charactersheet/main.py" />
         <option value="$PROJECT_DIR$/generators/adnd/charactersheet/classes/wisdom.py" />
         <option value="$PROJECT_DIR$/generators/adnd/charactersheet/classes/constitution.py" />
         <option value="$PROJECT_DIR$/generators/adnd/charactersheet/classes/saves.py" />
         <option value="$PROJECT_DIR$/generators/adnd/charactersheet/equipment/armour.py" />
+        <option value="$PROJECT_DIR$/generators/adnd/charactersheet/equipment/miscequip.py" />
         <option value="$PROJECT_DIR$/generators/adnd/charactersheet/equipment/weapons.py" />
+        <option value="$PROJECT_DIR$/generators/adnd/adndhub.py" />
+        <option value="$PROJECT_DIR$/generators/adnd/charactersheet/update.py" />
+        <option value="$PROJECT_DIR$/generators/adnd/charactersheet/classes/thaco.py" />
+        <option value="$PROJECT_DIR$/generators/adnd/charactersheet/classes/rof.py" />
+        <option value="$PROJECT_DIR$/generators/adnd/charactersheet/classes/spellprogression.py" />
+        <option value="$PROJECT_DIR$/generators/adnd/charactersheet/savewriter.py" />
+        <option value="$PROJECT_DIR$/generators/hub.py" />
+        <option value="$PROJECT_DIR$/generators/loot/gems/gem.py" />
         <option value="$PROJECT_DIR$/generators/adnd/charactersheet/pdfwriter.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-44" />
-    <option name="y" value="-11" />
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
     <option name="width" value="1340" />
     <option name="height" value="700" />
   </component>
@@ -233,8 +253,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -257,24 +275,14 @@
               <item name="HinaPlus" type="b2602c69:ProjectViewProjectNode" />
               <item name="HinaPlus" type="462c0819:PsiDirectoryNode" />
               <item name="generators" type="462c0819:PsiDirectoryNode" />
-              <item name="adnd" type="462c0819:PsiDirectoryNode" />
-              <item name="charactersheet" type="462c0819:PsiDirectoryNode" />
+              <item name="loot" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HinaPlus" type="b2602c69:ProjectViewProjectNode" />
               <item name="HinaPlus" type="462c0819:PsiDirectoryNode" />
               <item name="generators" type="462c0819:PsiDirectoryNode" />
-              <item name="adnd" type="462c0819:PsiDirectoryNode" />
-              <item name="charactersheet" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HinaPlus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HinaPlus" type="462c0819:PsiDirectoryNode" />
-              <item name="generators" type="462c0819:PsiDirectoryNode" />
-              <item name="adnd" type="462c0819:PsiDirectoryNode" />
-              <item name="charactersheet" type="462c0819:PsiDirectoryNode" />
-              <item name="equipment" type="462c0819:PsiDirectoryNode" />
+              <item name="loot" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HinaPlus" type="b2602c69:ProjectViewProjectNode" />
@@ -291,6 +299,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,31 +379,47 @@
       <option name="project" value="LOCAL" />
       <updated>1527693103931</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixes and edits to the pdf writer.&#10;Moved items to page 2 to make room for ammo.&#10;Foundation for ammo begun.">
+      <created>1527772501112</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1527772501112</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17423134" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32973805" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25269645" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17423134" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3990755" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990755" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -403,79 +429,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Setting Updates" />
     <MESSAGE value="Massive overhaul to support save files.&#10;Incomplete but mostly working." />
-    <option name="LAST_COMMIT_MESSAGE" value="Massive overhaul to support save files.&#10;Incomplete but mostly working." />
+    <MESSAGE value="Fixes and edits to the pdf writer.&#10;Moved items to page 2 to make room for ammo.&#10;Foundation for ammo begun." />
+    <MESSAGE value="Covered all TODOs in the pdf writer.&#10;Added the relationships table and implementations.&#10;Reorganized the gem roller to prepare for new loot tables.&#10;Probably some other stuff." />
+    <option name="LAST_COMMIT_MESSAGE" value="Covered all TODOs in the pdf writer.&#10;Added the relationships table and implementations.&#10;Reorganized the gem roller to prepare for new loot tables.&#10;Probably some other stuff." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/pdfwriter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16452">
-          <caret line="916" column="55" lean-forward="true" selection-start-line="916" selection-start-column="55" selection-end-line="916" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/race/names.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interactables/rhunefaust/rhune.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hina.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2020">
-          <caret line="101" column="27" lean-forward="false" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/race/hair.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interactables/rhunefaust/humanoids.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python36/Lib/random.py" />
-    <entry file="file://$PROJECT_DIR$/interactables/rhunefaust/rhune.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3520">
-          <caret line="180" column="0" lean-forward="false" selection-start-line="180" selection-start-column="0" selection-end-line="187" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hina.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2020">
-          <caret line="101" column="27" lean-forward="false" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/race/hair.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -523,7 +487,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -538,7 +501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1380">
           <caret line="69" column="26" lean-forward="true" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -546,7 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -554,15 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hina.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="68" column="41" lean-forward="false" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -584,7 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-620">
           <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -592,7 +543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -603,19 +553,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interactables/rhunefaust/rhune.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="38" column="34" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/resources/human/humanhair.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -623,23 +564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/savewriter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="145" column="43" lean-forward="false" selection-start-line="145" selection-start-column="43" selection-end-line="145" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generators/adnd/adndhub.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -647,15 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/equipment/miscequip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="119" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -663,7 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="26" column="79" lean-forward="false" selection-start-line="26" selection-start-column="79" selection-end-line="26" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -671,7 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1920">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -679,7 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="73" column="21" lean-forward="false" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -687,7 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1382">
           <caret line="88" column="27" lean-forward="true" selection-start-line="88" selection-start-column="27" selection-end-line="88" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -696,23 +607,14 @@
         <state relative-caret-position="280">
           <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="11" />
           <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/classes/armour.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/classes/armour.py" />
     <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/classes/constitution.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1700">
           <caret line="85" column="25" lean-forward="false" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -720,15 +622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/classes/saves.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -736,7 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -744,15 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python36/Lib/site-packages/reportlab/pdfgen/textobject.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,32 +643,153 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="1737" column="0" lean-forward="false" selection-start-line="1737" selection-start-column="0" selection-end-line="1737" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/equipment/miscequip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="72" column="22" lean-forward="false" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python36/Lib/site-packages/reportlab/pdfgen/textobject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interactables/rhunefaust/rhune.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/classes/thaco.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hina.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="190" column="24" lean-forward="false" selection-start-line="190" selection-start-column="24" selection-end-line="190" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/equipment/weapons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/equipment/armour.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1660">
+          <caret line="83" column="27" lean-forward="true" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/classes/saves.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
-          <caret line="84" column="47" lean-forward="false" selection-start-line="84" selection-start-column="47" selection-end-line="84" selection-end-column="47" />
+          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/classes/rof.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="940">
+          <caret line="47" column="27" lean-forward="false" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="168" column="4" lean-forward="false" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="4" />
+        <state relative-caret-position="2540">
+          <caret line="164" column="99" lean-forward="false" selection-start-line="164" selection-start-column="56" selection-end-line="164" selection-end-column="99" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/equipment/weapons.py">
+    <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/classes/spellprogression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="406">
+          <caret line="139" column="23" lean-forward="true" selection-start-line="139" selection-start-column="23" selection-end-line="139" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/adnd/adndhub.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/savewriter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6260">
+          <caret line="313" column="39" lean-forward="false" selection-start-line="313" selection-start-column="39" selection-end-line="313" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python36/Lib/site-packages/reportlab/pdfbase/pdfdoc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="219" column="0" lean-forward="false" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/update.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/loot/gem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/hub.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/loot/gems/gem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-415">
+          <caret line="113" column="18" lean-forward="true" selection-start-line="113" selection-start-column="18" selection-end-line="113" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/loot/gems/fancy.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -793,7 +797,7 @@
     <entry file="file://$PROJECT_DIR$/generators/adnd/charactersheet/pdfwriter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="443" column="29" lean-forward="true" selection-start-line="443" selection-start-column="29" selection-end-line="443" selection-end-column="29" />
+          <caret line="634" column="17" lean-forward="false" selection-start-line="634" selection-start-column="17" selection-end-line="634" selection-end-column="17" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>

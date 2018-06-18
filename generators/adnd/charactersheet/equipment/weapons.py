@@ -6,9 +6,7 @@ def roll(dosh, wp):
     i = 0
     weapons = []
     halfhand = ["Bastard Sword", "Harpoon", "Javelin", "Long Spear", "Spear", "Trident"]
-    arrows = ["Composite Long Bow", "Composite Short Bow", "Long Bow", "Short Bow"]
-    darts = ["Blowgun", "Darts"]
-    quarrel = ["Hand Crossbow", "Heavy Crossbow", "Light Crossbow"]
+
 
     hasarrows = False
     hasdarts = False
