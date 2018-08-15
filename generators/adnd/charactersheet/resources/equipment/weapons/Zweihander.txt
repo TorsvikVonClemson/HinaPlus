@@ -1,0 +1,10 @@
+5000
+15
+L
+S
+10
+1D10/3D6
+Melee
+Reach
+Str
+Str

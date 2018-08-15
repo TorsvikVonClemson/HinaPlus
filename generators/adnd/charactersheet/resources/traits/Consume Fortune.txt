@@ -1,0 +1,7 @@
+~~~Consume Fortune~~~
+
+"I swear. I had nothing to do with it."
+
+-Missgescus der Realist. Excerpt from "die dreiKöpfige Münze" 
+
+At any point you may steal someone's good fortune. If an ally makes a successful d20 roll, you may force them to fail. Doing so grants you 1 point of fate that can be spent on other cleric powers. In the case of an enemy's roll, you may force a successful hit. Consuming a critical hit grants 5 points instead of 1. There is no additional bonus for consuming an opponents critical failure.

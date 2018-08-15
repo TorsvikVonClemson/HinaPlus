@@ -1,0 +1,73 @@
+Battle Axe
+Blowgun
+Composite Long Bow
+Composite Short Bow
+Short Bow
+Long Bow
+Bola
+Chain
+Club
+Hand Crossbow
+Light Crossbow
+Heavy Crossbow
+Dagger
+Parrying Dagger
+Dart
+Footman's Flail
+Horseman's Flail
+Gaff-Hook
+Hand Axe
+Harpoon
+Javelin
+Knife
+Heavy Horse Lance
+Jousting Lance
+Light Horse Lance
+Medium Horse Lance
+Lasso
+Main-Gauche
+Mancatcher
+Morning Star
+Net
+Awl Pike
+Bardiche
+Bec De Corbin
+Bill
+Fauchard
+Glaive
+Guisarme
+Halberd
+Military Fork
+Partisian
+Ranseur
+Spetum
+Voulge
+Quarterstaff
+Sap
+Scourge
+Sickle
+Sling
+Spear
+Long Spear
+Staff Sling
+Stiletto
+Bastard Sword
+Broad Sword
+Cutlass
+Falchion
+Long Sword
+Rapier
+Sabre
+Scimitar
+Short Sword
+Zweihander
+Trident
+Warhammer
+Whip
+Caliver
+Musket
+Pistol
+Improvised
+Caltrop
+Unarmed
+Wrestling

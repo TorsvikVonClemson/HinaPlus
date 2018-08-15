@@ -1,0 +1,10 @@
+3000
+8
+L
+-
+7
+-
+Melee
+Reach
+Str
+Str

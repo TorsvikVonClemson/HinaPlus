@@ -1,7 +1,2 @@
 ~~~CHARGE!~~~
-Running into battle is a very powerful method of attack, increasing your chance to pierce armour and flesh. These bonuses only apply
-to your FIRST attack. To begin jogging no check is required but charging requires a STR check, Run a STR-4 and Sprint a STR-8. Maintaining 
-speeds faster than a jog requires a CON check, -1 for X3, -2 for X4, -3 for X5. These penalties are cumulative across the entire encounter. 
-If you slay your opponent on your first attack you can maintain your speed into another opponent (imagine skewering a Goblin on a
-spear then moving through to the next one.) There are a few negatives to maintaining these speeds. First your armour is reduced during 
-the turn since you cannot maintain normal defences. Some weapons are also adept at countering charges.
+Running into battle is a very powerful method of attack, increasing your chance to pierce armour and flesh. These bonuses only apply to your FIRST attack. To begin jogging no check is required but charging requires a STR check, Run a STR-4 and Sprint a STR-8. Maintaining speeds faster than a jog requires a CON check, -1 for X3, -2 for X4, -3 for X5. These penalties are cumulative across the entire encounter. If you slay your opponent on your first attack you can maintain your speed into another opponent (imagine skewering a Goblin on a spear then moving through to the next one.) There are a few negatives to maintaining these speeds. First your armour is reduced during the turn since you cannot maintain normal defences. Some weapons are also adept at countering charges.

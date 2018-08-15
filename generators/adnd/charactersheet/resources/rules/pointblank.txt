@@ -1,4 +1,2 @@
 ~~~Point Blank~~~
-If you are specialized in any bow or crossbow you gain the ability, Point Blank Shot. If you are ever firing closer than short range
-you gain an additional +2 to attack rolls. Furthermore with a bow specialization you can keep your bow knocked and prepared for combat,
-giving you a 0 initive.
+If you are specialized in any bow or crossbow you gain the ability, Point Blank Shot. If you are ever firing closer than short range you gain an additional +2 to attack rolls. Furthermore with a bow specialization you can keep your bow knocked and prepared for combat, giving you a 0 initive.

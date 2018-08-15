@@ -1,6 +1,5 @@
 ~~~Morale~~~
-In most cases, humanoids will choose to beat you with numbers rather than by skill. You can become very quickly ovewhelmed. I'm 
-revealing the situations for moale checks to encourage the players to strategise how to overcome superior numbers.
+In most cases, humanoids will choose to beat you with numbers rather than by skill. You can become very quickly ovewhelmed. I'm  revealing the situations for moale checks to encourage the players to strategise how to overcome superior numbers.
 
 Humanoids (and some animals) must make a morale check when:
 -They are suprised

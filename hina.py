@@ -196,6 +196,6 @@ async def on_message(message):
     if image != 'fault':
         await client.send_file(message.channel, '{}'.format(image))
 
-client.run('MzAxNjM4NDg3NjMzODIxNjk3.C9Ahqw.u53J4fjNPW-ODS0XnqZvtlqjJiY')
+client.run()
 
 

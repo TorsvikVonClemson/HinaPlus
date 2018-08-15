@@ -1,0 +1,10 @@
+1000
+4
+M
+S
+8
+2D4/2D8
+Melee
+Melee
+Str
+Str

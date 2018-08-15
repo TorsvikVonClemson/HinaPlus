@@ -1,0 +1,6 @@
+Firewood
+Rations
+Tent, Small
+Tent, Large
+Tent, Pavilion
+Winter Blanket

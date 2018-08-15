@@ -1,0 +1,10 @@
+0
+3
+M
+B
+4
+1D6/1D3
+Melee
+Melee
+Str
+Str

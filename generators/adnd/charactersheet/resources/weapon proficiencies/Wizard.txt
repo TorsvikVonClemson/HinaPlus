@@ -1,0 +1,5 @@
+Dagger
+Dart
+Knife
+Quarterstaff
+Sling

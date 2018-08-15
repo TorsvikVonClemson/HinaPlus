@@ -1,0 +1,10 @@
+1000
+12
+M
+P/B
+7
+2D4/1D6+1
+Melee
+Melee
+Str
+Str

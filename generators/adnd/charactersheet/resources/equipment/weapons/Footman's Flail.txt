@@ -1,0 +1,10 @@
+1500
+15
+M
+B
+7
+1D6+1/2D4
+Melee
+Melee
+Str
+Str

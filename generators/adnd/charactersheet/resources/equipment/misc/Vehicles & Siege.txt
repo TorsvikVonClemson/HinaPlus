@@ -1,0 +1,11 @@
+Carriage, Common
+Carriage, Expensive
+Chariot, Riding
+Chariot, War
+Sedan Chair
+Spare Wheel
+Hand Cart
+Wheelbarrow
+Cannon, Field
+Cannon, Galloper
+Cannon, Siege

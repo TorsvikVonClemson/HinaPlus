@@ -1,0 +1,18 @@
+~~~The Contract~~~
+Each adventurer expects 10% of the loot. This means a party of 10 will produce no profit for the lords. Some adventurers will expect a greater or smaller share, this will be listed as a trait.
+
+~~~Special Requests~~
+Some adventurers will also have specific requests for how they want to be paid due to their traits. These may be things like "Only accepts Gold" or "Only accepts payment in Art Objects". In these cases, if none of their requested items are found they will not expect payment. Though, if their requested loot is found you must give it to them up to their percent share, even if a single item's worth totals greater than their percent share. That is to say, they keep the change.
+
+Example: A party of 4 finds 100 Gold and a painting worth 100 Gold for a total of 200 Gold. Each member's share is 20 gold but one member only accepts payment in the form of art. Three players will take 20 gold and the fourth will take the 100 gold painting, leaving 40 gold for the lords.
+
+~~~Personal Equipment~~~
+All items in an adventurer's inventory belong to them. They will only exchange or sell items if there is a suitable replacement. This is to prevent you from stripping a level 1 Paladin down to his skivvies and firing him. This rule, however, does not prevent you from taking someone out to the woods and subjecting them to an unfortuneate accident.
+
+~~~Items and Materials~~~
+All non-monetary (armour, weapons, etc) items collected are sold for 25% their value at the end of an adventure. Resources and animals sell for full price. Adventurer's get first call on all items. If an Adventurer finds a set of armour they may take it and put their old armour in the loot pile.The lords may also "purchase" items from the Adventurers Loot Pile at 25% value, storing it if they wish to personally keep the item or gift it to another adventurer.
+
+Example: A party of 4 wizards finds a set of field plate. None of them can equip it so they put it in the Loot Pile. It sells for 50 Gold when they return. The lords can either sell the plate and give the wizards their 5 Gold each or the lords may keep the plate paying the party out of their own pocket instead.
+
+~~~Magic Items~~~
+Magic items are considered too valuble to be traded and are not factored into loot value. If a magic item is found that could replace an adventurer's current item they get it immediately. Any extra items and consumeables go to the lords' storehouse. If the lords decide they will not want the magic item or need quick money they can sell a magic item. The lords can also gift magic items to Adventurers, though once eqipment is given to an Adventurer, it becomes a part of their Personal Equiptment. Consumeables always belong to the lords.

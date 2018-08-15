@@ -1,0 +1,3 @@
+~~~Cure Disease~~
+
+You can cure disease once a week for ever 5 levels (round up). This does not affect magical diseases.

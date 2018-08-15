@@ -1,0 +1,10 @@
+0
+0
+L
+P
+7
+2D4/2D6
+Melee(Melee)
+Reach(10/20/30)
+Str
+Str(Dex)

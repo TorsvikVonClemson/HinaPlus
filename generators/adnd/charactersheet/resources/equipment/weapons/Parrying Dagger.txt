@@ -1,0 +1,10 @@
+500
+1
+S
+P
+2
+1D3/1D3
+Melee
+Melee
+Str
+Str

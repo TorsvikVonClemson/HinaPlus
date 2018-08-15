@@ -1,0 +1,21 @@
+Backpack
+Barrel, Small
+Basket, Large
+Basket, Small
+Basket, Tall
+Pouch, Large
+Pouch, Small
+Bolt Case
+Bucket
+Chest, Large
+Chest, Small
+Trunk
+Scroll Case
+Glass Bottle
+Glass Phial
+Leather Phial
+Quiver
+Sack, Large
+Sack, Small
+Wineskin
+Flask

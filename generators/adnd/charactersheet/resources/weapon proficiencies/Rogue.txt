@@ -1,0 +1,34 @@
+Blowgun
+Short Bow
+Bola
+Chain
+Club
+Hand Crossbow
+Light Crossbow
+Dagger
+Parrying Dagger
+Dart
+Hand Axe
+Knife
+Lasso
+Main-Gauche
+Mancatcher
+Net
+Quarterstaff
+Sap
+Sickle
+Sling
+Staff Sling
+Stiletto
+Cutlass
+Falchion
+Rapier
+Sabre
+Scimitar
+Short Sword
+Whip
+Pistol
+Caltrop
+Improvised
+Unarmed
+Caliver

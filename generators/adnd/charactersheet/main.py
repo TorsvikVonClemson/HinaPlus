@@ -52,8 +52,9 @@ def main(x):
         race = races.roll()
     gender = genders.roll(race)
     name = names.roll(race, gender)
-    # while playerclass!="Rogue":		#Force Class
-    playerclass = classes.roll(race)
+    forcelist=['Cleric','Paladin']
+    while playerclass not in forcelist:		#Force Class
+        playerclass = classes.roll(race)
     save = saves.roll(playerclass)
     god = religion.roll(race)
     years = age.roll(race)

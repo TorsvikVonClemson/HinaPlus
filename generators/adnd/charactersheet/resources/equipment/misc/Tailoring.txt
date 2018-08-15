@@ -1,0 +1,5 @@
+Cloth, Common
+Cloth, Fine
+Cloth, Rich
+Sewing Kit
+Canvas

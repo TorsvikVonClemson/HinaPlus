@@ -1,0 +1,10 @@
+500
+8
+L
+P
+8
+1D8/1D8+1
+Melee
+Reach
+Str
+Str

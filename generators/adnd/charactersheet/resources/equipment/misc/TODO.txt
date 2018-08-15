@@ -1,0 +1,21 @@
+These need to be sold on a case by case basis
+
+Bolt Case
+Quiver
+Holy Item
+Instrument
+Thieves' Picks
+Weaponblack
+
+These have perequsites
+
+Block and Tackle
+Grappling hook
+Paper Papyrus
+Parchment
+Torch
+Lantern, Beacon
+Lantern, Bullseye
+Lantern, Hooded
+Firewood
+Candle

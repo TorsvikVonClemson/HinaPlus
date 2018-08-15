@@ -1,0 +1,10 @@
+100
+.1
+S
+B
+2
+1D2/1D2
+Melee
+Melee
+Str
+Str

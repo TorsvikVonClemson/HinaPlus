@@ -1,0 +1,83 @@
+Camping Supplies:
+Firewood
+Rations
+Tent, Small
+Tent, Large
+Tent, Pavilion
+Winter Blanket
+
+Containers:
+Backpack
+Barrel, Small
+Basket, Large
+Basket, Small
+Basket, Tall
+Pouch, Large
+Pouch, Small
+Bolt Case
+Bucket
+Chest, Large
+Chest, Small
+Trunk
+Scroll Case
+Glass Bottle
+Glass Phial
+Leather Phial
+Quiver
+Sack, Large
+Sack, Small
+Winskin
+Flask
+
+Tools:
+Hammer, Wooden
+Hammer, Iron
+Crowbar
+Fishhook
+Fish Net
+Flint and Steel
+Iron Pot
+Paper
+Papyrus
+Velum
+Wax Tablet
+Lock Pick Set
+Whetstone
+Ink (per phial)
+Sewing Kit
+
+Traveling Gear:
+Block and Tackle
+Chain, Heavy
+Chain, Light
+Candle
+Crampons
+Grappling Hook
+Ladder, 10 ft
+Lantern, Beacon
+Lantern, Bullseye
+Lantern, Hooded
+Lamp Oil
+Piton
+Rope, Hemp
+Rope, Silk
+Torch
+Wineskin
+
+Misc:
+Bell
+Chalk
+Holy Item
+Hour Glass
+Lock, Good
+Lock, Poor
+Magnifying Glass
+Merchant's Scale
+Mirror
+Greek Fire
+Sealing Wax
+Signal Whistle
+Signet Ring
+Soap
+Spyglass
+Waterclock

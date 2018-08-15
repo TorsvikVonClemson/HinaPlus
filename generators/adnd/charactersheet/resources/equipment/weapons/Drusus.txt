@@ -1,0 +1,10 @@
+5000
+3
+M
+S
+3
+1D6+1/1D8+1
+Melee
+Melee
+Str
+Str

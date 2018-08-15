@@ -1,0 +1,10 @@
+0
+0
+L
+P
+7
+1D8+1/3D4
+Melee(Melee)
+Reach(10/20/30)
+Str
+Str

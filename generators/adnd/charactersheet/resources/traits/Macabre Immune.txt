@@ -1,0 +1,3 @@
+~~~Macabre Immune~~~
+
+You automaticly pass all Macabre checks. This will not protect you from forced Macabre. If you also have Resist Macabre, then you emit an aura of Resist Macabre to all party members.

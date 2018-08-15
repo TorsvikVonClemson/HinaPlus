@@ -1,0 +1,10 @@
+0
+4
+L
+B
+4
+1D6/1D6
+Melee
+Reach
+Str
+Str

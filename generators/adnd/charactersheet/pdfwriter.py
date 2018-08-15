@@ -583,8 +583,24 @@ def write(fp):
     # Begin Special Box #
     # ----------------- #
 
-    c.drawString(4.9 * inch, (xpos + 2.7) * inch, "Special Abilities")
+    c.drawCentredString(5.5 * inch, (xpos + 2.7) * inch, "Special Abilities and Traits")
     c.rect(3.8 * inch, xpos * inch, 3.4 * inch, 2.85 * inch)
+
+    # ---Start Cleric & Paladin Powers--- #
+
+    traitlist=['traits']
+
+    if find(charsheet, 'Class:')=='Cleric' or find(charsheet, 'Class:')=='Paladin':
+        ref=((str(find(charsheet, 'Religion:'))+str(find(charsheet, 'Class:'))+'traits').lower()).replace('\n','')
+
+        file = "/generators/adnd/charactersheet/resources/traits/{}.txt".format(ref)
+        path = os.getcwd() + file
+        with open(path, "r") as text_file:
+            lines = text_file.readlines()
+            text_file.close()
+
+        for i in range(0,len(lines)):
+            traitlist.extend(lines[i].split(','))
 
     # ---Fill With Special Rules---#
     i = 0
@@ -593,10 +609,20 @@ def write(fp):
                       'Long Spear', 'Spear', 'Main-Gauche', 'Mancatcher', 'Military Fork', 'Net', 'Parrying Dagger',
                       'Partisian', 'Ranseur', 'Sap', 'Scimitar', 'Scourge', 'Spear', 'Spetum', 'Staff Sling',
                       'Stiletto', 'Volgue', 'Whip']
+    expertlist=[]
     while i < len(proflist):
         if proflist[i].replace(' Specialist', '') in specialweapons:
-            skilllist.append(proflist[i])
+            expertlist.append(proflist[i])
         i += 1
+    j=1
+    k=0
+    for i in range (0,20): # replace blankspaces with traits
+        if skilllist[i]=='' and len(traitlist)>j:
+            skilllist[i]=skilllist[i].replace('',traitlist[j])
+            j+=1
+        if skilllist[i]=='' and len(expertlist)>k:
+            skilllist[i]=skilllist[i].replace('',expertlist[k])
+            k+=1
 
     for x in range(0, 2):
         for y in range(0, 10):
@@ -620,7 +646,7 @@ def write(fp):
     c.rect(-.9 * inch, 7.65 * inch, 8 * inch, 2.85 * inch)
     c.drawString(-.8 * inch, 10.25 * inch, 'Spells Per Day:')
 
-    spd = spellprogression.find(find(charsheet, 'Class:'), find(charsheet, 'Level:'), find(charsheet, 'Wisdom:'))
+    spd = spellprogression.find(find(charsheet, 'Class:'), find(charsheet, 'Level:'), int(find(charsheet, 'Wis:')))
     spellsperday = '/'.join(spd)
 
     c.drawString(.4 * inch, 10.25 * inch, spellsperday)
@@ -714,10 +740,13 @@ def write(fp):
 
     #   listformat=[subfolder,filelocation1,filelocation2,filelocationX...
 
-    c.drawString(2.5 * inch, (7.4 - (xpos * .15)) * inch, "~~~~~Quick Reference~~~~~")
+    c.drawCentredString(3.1 * inch, (7.4 - (xpos * .15)) * inch, "~~~~~Abilities & Traits~~~~~")
     xpos += 2
+    xpos = fluffy(traitlist, xpos, c)
 
-    ruleslist = ['rules', 'fulldef', 'running', 'dualwielding', 'morale']
+    c.drawCentredString(3.1 * inch, (7.4 - (xpos * .15)) * inch, "~~~~~Quick Reference~~~~~")
+    xpos += 2
+    ruleslist = ['rules', 'contract','macabre', 'fulldef', 'running', 'dualwielding', 'morale']
     i = 0
     while i < len(specialweapons):
         if specialweapons[i] in proflist:
@@ -732,11 +761,21 @@ def write(fp):
 
     xpos = fluffy(ruleslist, xpos, c)
 
-    c.drawString(2.5 * inch, (7.4 - (xpos * .15)) * inch, "~~~~~Fluff~~~~~")
+
+    c.drawCentredString(3.1 * inch, (7.4 - (xpos * .15)) * inch, "~~~~~Fluff~~~~~")
     xpos += 2
     flufflist = [find(charsheet, "Race:").rstrip('\n'), find(charsheet, "Race:".rstrip('\n')),
                  find(charsheet, "Religion:").rstrip('\n')]
     xpos = fluffy(flufflist, xpos, c)
+
+    # --------- #
+    # Equipment #
+    # --------- #
+    xpos = 10
+    c.showPage()
+    c.translate(inch, inch)
+
+    shopkeeper(c)
 
     c.save()  # finalizes the document
     return 0
@@ -788,6 +827,67 @@ def THAC0(missile, melee, spec, based):
     return str(THAC0Value)
 
 
+def shopkeeper(c):
+    c.setFont("Helvetica", 14)
+    c.drawCentredString(3.25 * inch, 10.5 * inch, "~~~~~Equipment~~~~~")
+    c.setFont("Helvetica", 8.5)
+
+    ypos = -.2
+    xpos = 9.75
+    categories = ["Camping Supplies", "Containers", "Tools", "Traveling Gear", "Misc", "Ammo", "Resources", "Animals",
+                  "Vehicles & Siege", "Drugs"]
+
+    for i in range(0, len(categories)):
+        file = "/generators/adnd/charactersheet/resources/equipment/misc/{}".format(
+            categories[i]) + ".txt"
+        path = os.getcwd() + file
+        with open(path, "r") as text_file:
+            items = text_file.readlines()
+            for k in range(0, len(items)):
+                items[k] = items[k].rstrip("\n")
+            text_file.close()
+        if (xpos - (len(items) * .15) - .35) < -1:
+            ypos += 2.35
+            xpos = 9.75
+        c.setFont("Helvetica", 10)
+        c.drawCentredString((ypos + 1.1) * inch, (xpos + .25) * inch, categories[i])
+        c.setFont("Helvetica", 8.5)
+        alignment = 0
+        for j in range(0, len(items)):
+            c.drawString(ypos * inch, (xpos - alignment) * inch, items[j])
+            file = "/generators/adnd/charactersheet/resources/equipment/misc/treasury/{}".format(
+                items[j]) + ".txt"
+            path = os.getcwd() + file
+            with open(path, "r") as text_file:
+                lines = text_file.readlines()
+                text_file.close()
+            for k in range(0, len(lines)):
+                lines[k] = lines[k].rstrip("\n")
+            if int(lines[0]) % 1000 == 0:
+                value = ' Gold'
+                lines[0] = str(int(int(lines[0]) / 1000))
+            elif int(lines[0]) % 100 == 0:
+                lines[0] = str(int(int(lines[0]) / 100))
+                value = ' Silver'
+            elif int(lines[0]) % 10 == 0:
+                lines[0] = str(int(int(lines[0]) / 10))
+                value = ' Copper'
+            else:
+                value = ' Iron'
+            c.drawString((ypos + 1.15) * inch, (xpos - alignment) * inch, lines[0] + value)
+            if lines[1] == 'per':
+                c.drawRightString((ypos + 2.15) * inch, (xpos - alignment) * inch, lines[1] + " .lb")
+            elif lines[1] == 'X':
+                c.drawRightString((ypos + 2.15) * inch, (xpos - alignment) * inch, "")
+            else:
+                c.drawRightString((ypos + 2.15) * inch, (xpos - alignment) * inch, lines[1] + " .lbs")
+            alignment += .15
+        c.rect((ypos - .1) * inch, (xpos - alignment + .1) * inch, 2.3 * inch, (alignment + .3) * inch)
+        xpos -= (alignment + .35)
+
+    return
+
+
 def DamageAdj(based, stronk, spec):
     damage = 0
 
@@ -805,9 +905,12 @@ def DamageAdj(based, stronk, spec):
 
 def fluffy(location, xpos, c):
     c.setFont("Helvetica", 9)
-    i = 1
+    linelength = 0
     reset = 0
-    while i < len(location):
+    nextline = []
+
+    for i in range(1, len(location)):
+        wordlist = []
         inc = 0
         file = "/generators/adnd/charactersheet/resources/{}".format(location[0].lower()) + "/{}.txt".format(
             location[i].lower())
@@ -815,16 +918,22 @@ def fluffy(location, xpos, c):
         with open(path, "r") as text_file:
             lines = text_file.readlines()
             text_file.close()
-            while len(lines) > inc:
-                lines[0 + inc] = lines[0 + inc].rstrip("\n")
+
+        for j in range(0, len(lines)):
+            wordlist.extend(lines[j].split(' '))
+
+        for j in range(0, len(wordlist)):
+            if (linelength + len(wordlist[j])) < 105 and wordlist[j].find('\n') == -1:
+                linelength += len(wordlist[j])
+                nextline.append(wordlist[j])
+            else:
+                nextline.append(wordlist[j])
+                c.drawString(-.8 * inch, (7.4 - (xpos * .15)) * inch, (' '.join(nextline)).replace('\n', ''))
                 inc += 1
+                xpos += 1
+                linelength = 0
+                nextline = []
 
-        inc = 0
-
-        while len(lines) > inc:
-            c.drawString(-.8 * inch, (7.4 - (xpos * .15)) * inch, lines[inc])
-            inc += 1
-            xpos += 1
             if (7.4 - (xpos * .15)) <= 0:
                 c.drawString(2 * inch, (7.4 - (xpos * .15)) * inch, "~~~~~CONTINUED ON NEXT PAGE~~~~~")
                 xpos += 1
@@ -834,16 +943,65 @@ def fluffy(location, xpos, c):
                 c.translate(inch, inch)
                 c.setFont("Helvetica", 8.5)
                 xpos = -18
+
+        c.drawString(-.8 * inch, (7.4 - (xpos * .15)) * inch, (' '.join(nextline)).replace('\n', ''))
+        inc += 1
+        xpos += 1
+        linelength = 0
+        nextline = []
+
         c.rect(-.9 * inch, (7.4 - (xpos * .15)) * inch, 8 * inch, ((inc + 1 - reset) * .15) * inch)
         reset = 0
-        i += 1
         xpos += 2
-        if (7.4 - (xpos * .15)) <= 0:
+        if (7.2 - (xpos * .15)) <= 0:
             c.showPage()
             c.translate(inch, inch)
             c.setFont("Helvetica", 9)
+            xpos = -18
     c.setFont("Helvetica", 10)
     return xpos
+
+    # c.setFont("Helvetica", 9)
+    # i = 1
+    # reset = 0
+    # while i < len(location):
+    #     inc = 0
+    #     file = "/generators/adnd/charactersheet/resources/{}".format(location[0].lower()) + "/{}.txt".format(
+    #         location[i].lower())
+    #     path = os.getcwd() + file
+    #     with open(path, "r") as text_file:
+    #         lines = text_file.readlines()
+    #         text_file.close()
+    #         while len(lines) > inc:
+    #             lines[0 + inc] = lines[0 + inc].rstrip("\n")
+    #             inc += 1
+    #
+    #     inc = 0
+    #
+    #     while len(lines) > inc:
+    #         c.drawString(-.8 * inch, (7.4 - (xpos * .15)) * inch, lines[inc])
+    #         inc += 1
+    #         xpos += 1
+    #         if (7.4 - (xpos * .15)) <= 0:
+    #             c.drawString(2 * inch, (7.4 - (xpos * .15)) * inch, "~~~~~CONTINUED ON NEXT PAGE~~~~~")
+    #             xpos += 1
+    #             reset = inc
+    #             c.rect(-.9 * inch, (7.4 - (xpos * .15)) * inch, 8 * inch, ((inc + 2) * .15) * inch)
+    #             c.showPage()
+    #             c.translate(inch, inch)
+    #             c.setFont("Helvetica", 8.5)
+    #             xpos = -18
+    #     c.rect(-.9 * inch, (7.4 - (xpos * .15)) * inch, 8 * inch, ((inc + 1 - reset) * .15) * inch)
+    #     reset = 0
+    #     i += 1
+    #     xpos += 2
+    #     if (7.2 - (xpos * .15)) <= 0:
+    #         c.showPage()
+    #         c.translate(inch, inch)
+    #         c.setFont("Helvetica", 9)
+    #         xpos = -18
+    # c.setFont("Helvetica", 10)
+    # return xpos
 
 
 def find(charsheet, location):

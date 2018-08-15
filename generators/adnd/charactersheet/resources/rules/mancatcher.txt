@@ -1,3 +1,2 @@
 ~~~Mancatcher~~~
-The opponent always uses their natural armour+Dex+Shield when defending. After being captured the opponend is flat footed and takes
-1D2 damage if they struggle. Escape is on a successful Bend Bars/Lift Gates.
+The opponent always uses their natural armour+Dex+Shield when defending. After being captured the opponend is flat footed and takes 1D2 damage if they struggle. Escape is on a successful Bend Bars/Lift Gates.

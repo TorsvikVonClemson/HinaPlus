@@ -1,0 +1,10 @@
+500
+7
+M
+S
+7
+1D8/1D8
+Melee
+Melee
+Str
+Str

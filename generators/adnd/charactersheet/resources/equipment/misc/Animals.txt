@@ -1,0 +1,32 @@
+Boar
+Bull
+Calf
+Capon (Rooster)
+Cat
+Chicken
+Cow
+Dog
+Dog, Guard
+Dog, Hunting
+Dog, War
+Donkey
+Falcon, Trained
+Goat
+Goose
+Horse, Draft
+Horse, Heavy War
+Horse, Light War
+Horse, Medium War
+Horse, Riding
+Peacock
+Pig
+Pigeon
+Pigeon, Homing
+Pony
+Ram
+Sheep
+Songbird, Common
+Songbird, Uncommon
+Songbird, Rare
+Songbird, Exotic
+Swan

@@ -1,0 +1,16 @@
+Block and Tackle
+Chain, Heavy
+Chain, Light
+Candle
+Crampons
+Grappling Hook
+Ladder
+Lantern, Beacon
+Lantern, Bullseye
+Lantern, Hooded
+Lamp Oil
+Piton
+Rope, Hemp
+Rope, Silk
+Torch
+Wineskin

@@ -1,0 +1,19 @@
+Cost
+Weight
+Size
+Type
+Speed
+Damage
+RoF
+Range
+Damage Bonus
+Attack Bonus
+
+RoF Types:
+Melee
+Heavy
+Light
+Dagger
+Dart
+Melee(Melee)
+Melee(Dagger)

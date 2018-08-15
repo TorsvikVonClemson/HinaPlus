@@ -1,0 +1,10 @@
+1000
+8
+L
+P/S
+9
+1D4/1D4
+Melee
+Range
+Str
+Str

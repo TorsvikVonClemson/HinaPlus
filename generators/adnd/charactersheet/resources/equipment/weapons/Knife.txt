@@ -1,0 +1,10 @@
+50
+.5
+S
+P/S
+2
+1D3/1D2
+Melee(Dagger)
+Melee
+Str
+Str(Dex)

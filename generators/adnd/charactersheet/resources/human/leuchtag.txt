@@ -1,24 +1,12 @@
 Leuchtag TN: God of Fire
 
-Holy Symbol: An Everburning Staff
-Major Shperes: Elemental Fire,Sun, Healing
+Holy Symbol: An Ever-burning Staff
+Major Spheres: Elemental Fire, Sun, Healing
 Minor Spheres: Chaos, Wards, Law, Necromantic, Summoning
 Favored Weapon: Staff, staff sling
-Favored Armor:Leather
+Favored Armor: Leather
 
-The clerics of Leuchtag are an enigmatic group. Stuck between their strong sense of duty and pyromanic tendencies. Much like fire 
-themselves they arepowerful forces for good but if left unchecked they become chaotic and destructive. Low level clerics wear this 
-leather armours, the armour they woreas initiates before they were immune to heat. More experienced members of the clergy will wear 
-chain and the highest ranking members will wear plate,using their abilities to super heat their armour. All clergy members keep a 
-burning staff on hand and must keep it lit at all times. The design of thesestaves will vary from curch to curch, ranging from gnarled 
-burining staves to imperial lamposts. The clergy's primary intention is to heal people, constantly repressing the need to burn things. 
-Its often not known outside your curch but it is an act of great shame if a fire gets out of hand and harms someone you had intended 
-to protect.
+The clerics of Leuchtag are an enigmatic group. Stuck between their strong sense of duty and pyromaniac tendencies. Much like fire themselves they are powerful forces for good but if left unchecked they become chaotic and destructive. Low level clerics wear leather armors as initiates before they are immune to heat. More experienced members of the clergy will wear chain and the highest ranking members will wear plate,using their abilities to super heat their armor. All clergy members keep a burning staff on hand and must keep it lit at all times. The design of these staves will vary from church to church, ranging from gnarled burning staves to imperial lampposts. The clergy's primary intention is to heal people, constantly repressing the need to burn things. Its often not known outside the church but it is an act of great shame if a fire gets out of hand and harms someone you had intended to protect.
 
-Many people don't know what to think of your god, he seems unpredictable and dangerous. Leuchtag maintains a neutrality second only 
-to druids. He heals the wounds of an evil man just as quickly as he may set fire to a barn. Leuchtag is depicted as a bearded middle 
-aged man dressed in treated leather armour. Whenever he is depicted he is shown in a wide variety of positions and hand gestures, 
-all with diffrent meaning that only the faithful usually recognise. On his holy day his curch is seen as a nusence, they set fire 
-to a patch of nearby forest and refuse to put it out due to its holy nature. Only higher ranking members of the clergy will know 
-that the intention of this celebration is to make sure the average citizen is prepared to deal with such a natural disaster without 
-Leuchtag's help. Keep in mind, to Leuchtag, even a smoldering campire is more holy than the largest conjured fire.
+Many people don't know what to think of Leuchtag, He seems unpredictable and dangerous. He maintains a neutrality second only to druids. He heals the wounds of an evil man just as quickly as he may set fire to a barn. Leuchtag is depicted as a bearded middle aged man dressed in treated leather armor. Whenever he is depicted he is shown in a wide variety of positions and hand gestures, 
+all with different meaning that only the faithful usually recognize. On his holy day his church is seen as a nuisance. They set fire to a patch of nearby forest and refuse to put it out due to its holy nature. Only higher ranking members of the clergy will know that the intention of this celebration is to make sure the average citizen is prepared to deal with such a natural disaster without Leuchtag's help. Keep in mind that, to Leuchtag, even a smoldering campfire is more holy than the largest magically conjured fire.

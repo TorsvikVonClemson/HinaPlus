@@ -1,0 +1,10 @@
+500
+12
+L
+S
+10
+2D4/2D4
+Melee
+Reach
+Str
+Str

@@ -1,0 +1,10 @@
+2500
+10
+M
+S
+8
+2D4/2D8
+Melee
+Reach
+Str
+Str

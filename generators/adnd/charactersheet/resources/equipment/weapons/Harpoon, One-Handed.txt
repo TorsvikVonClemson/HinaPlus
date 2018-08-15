@@ -1,0 +1,10 @@
+2000
+6
+L
+P
+7
+1D4+1/1D6+1
+Melee(Melee)
+Reach(10/20/30)
+Str
+Str

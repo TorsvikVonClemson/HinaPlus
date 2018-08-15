@@ -41,7 +41,7 @@ def roll(dosh, playerclass, weightlimit, weaponlist, playerarmour, playershield,
     if playerclass == 'Bard':
         prepurchases.append('Instrument')
     if playerclass == 'Thief':
-        prepurchases.append("Thieves' Picks")
+        prepurchases.append("Lock Pick Set")
         prepurchases.append("Weaponblack")
 
     while i < len(prepurchases):

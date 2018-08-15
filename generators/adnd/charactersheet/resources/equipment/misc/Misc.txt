@@ -1,0 +1,16 @@
+Bell
+Chalk
+Holy Item
+Hourglass
+Lock, Good
+Lock, Poor
+Magnifying Glass
+Merchant's Scale
+Mirror
+Greek Fire
+Sealing Wax
+Signal Whistle
+Signet Ring
+Soap
+Spyglass
+Water Clock

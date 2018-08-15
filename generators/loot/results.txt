@@ -1,0 +1,6 @@
+Iron: 32
+Copper: 11
+Silver: 0
+Gold: 0
+Gems: 0
+Art Objects:0

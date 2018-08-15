@@ -1,0 +1,30 @@
+Alcohol, Common
+Alcohol, Uncommon
+Alcohol, Rare
+Alcohol, Exotic
+Honey
+Meat
+Sugar
+Produce
+Cloth, Common
+Cloth, Fine
+Cloth, Rich
+Canvas
+Spice, Common
+Spice, Uncommon
+Spice, Rare
+Spice, Exotic
+Metal, Common
+Metal, Iron
+Metal, Copper
+Metal, Silver
+Metal, Gold
+Ore, Common
+Ore, Iron
+Ore, Copper
+Ore, Silver
+Ore, Gold
+Wood, Common
+Wood, Uncommon
+Wood, Rare
+Wood, Exotic

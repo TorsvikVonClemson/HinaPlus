@@ -1,0 +1,7 @@
+~~~Stack the Deck~~~
+	
+"Anyone familiar with Poker knows that the game's dynamic goes beyond the written rule. I simply include cheating as one of those unwritten nuances."
+
+-Gluckas der Optimist. Excerpt from "die dreiKöpfige Münze"
+
+Once per encounter you may force a D20 to have the same result as the previously rolled D20. This is not restricted by the passage of time.

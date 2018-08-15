@@ -1,0 +1,3 @@
+Price (in Iron)
+Weight
+Volume

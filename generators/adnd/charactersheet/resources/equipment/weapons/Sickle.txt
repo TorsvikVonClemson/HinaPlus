@@ -1,0 +1,10 @@
+60
+3
+M
+S
+4
+1D4+1/1D4
+Melee
+Melee
+Str
+Str

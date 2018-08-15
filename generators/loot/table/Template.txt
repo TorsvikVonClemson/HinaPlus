@@ -1,0 +1,9 @@
+Iron
+Copper
+Silver
+Gold
+Gems
+Art Objects
+Magical Items
+
+Min:Max:Percent

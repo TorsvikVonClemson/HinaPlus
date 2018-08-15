@@ -1,0 +1,15 @@
+Hammer, Wooden
+Hammer, Iron
+Crowbar
+Fishhook
+Fishing Net
+Flint and Steel
+Iron Pot
+Paper
+Papyrus
+Velum
+Wax Tablet
+Lock Pick Set
+Whetstone
+Writing Ink
+Sewing Kit

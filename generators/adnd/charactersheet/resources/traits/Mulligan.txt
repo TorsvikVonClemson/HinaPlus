@@ -1,0 +1,7 @@
+~~~Mulligan~~~
+	
+"Well, obviously that doesn't count. We'll have to to it again"
+
+-Gluckas der Optimist. Excerpt from "die dreiKöpfige Münze"
+
+Once per encounter you may force anyone to reroll a D20. If the reroll comes up a critical failure (or success in the case of an opponent rerolling) that character will be struck with the curse Luck Amok. The caster takes the curse if an NPC becomes cursed.

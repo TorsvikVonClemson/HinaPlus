@@ -1,0 +1,62 @@
+Backpack
+Barrel, Small
+Basket, Large
+Basket, Tall
+Bell
+Pouch, Large
+Pouch, Small
+Block and Tackle
+Bucket
+Chain, Heavy
+Chain, Light
+Chest, Large
+Chest, Small
+Candle
+Chalk
+Crampons
+Flint and Steel
+Glass Bottle
+Grappling Hook
+Holy Item
+Hourglass
+Ladder
+Lantern, Beacon
+Lantern, Bullseye
+Lantern, Hooded
+Lock, Good
+Lock, Poor
+Magnifying Glass
+Scroll Case
+Merchant's Scale
+Mirror
+Greek Fire
+Lamp Oil
+Perfume
+Piton
+Rope, Hemp
+Rope, Silk
+Sack, Large
+Sack, Small
+Sealing Wax
+Signal Whistle
+Signet Ring
+Soap
+Spyglass
+Tent, Large
+Tent, Pavilion
+Tent, Small
+Torch
+Water Clock
+Whetstone
+Wineskin
+Winter Blanket
+Clock
+Telescope
+Firewood
+Trunk
+Glass Phial
+Leather Phial
+Flask
+Hammer, Wooden
+Hammer, Iron
+Crowbar

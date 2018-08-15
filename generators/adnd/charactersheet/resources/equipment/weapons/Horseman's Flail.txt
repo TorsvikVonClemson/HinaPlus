@@ -1,0 +1,10 @@
+800
+5
+M
+B
+6
+1D4+1/1D4+1
+Melee
+Melee
+Str
+Str

@@ -1,0 +1,23 @@
+Chain, Heavy
+Chain, Light
+Cloth, Common
+Cloth, Fine
+Cloth, Rich
+Candle
+Canvas
+Fishhook
+Greek Fire
+Lamp Oil
+Paper
+Papyrus
+Parchment
+Piton
+Perfume
+Rope, Hemp
+Rope, Silk
+Sack, Large
+Sack, Small
+Sealing Wax
+Soap
+Torch
+Writing ink

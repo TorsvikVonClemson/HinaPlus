@@ -1,3 +1,2 @@
 ~~~Lances~~~
-All lances cause double damage when charging on a mount. If a lance does more than 12 dmg or is parried by a shield it has a 1/3 chance
-of breaking. If a lance ever does 8+ damage it always dismounts the opponent with an additional 1D2 dmg.
+All lances cause double damage when charging on a mount. If a lance does more than 12 dmg or is parried by a shield it has a 1/3 chance of breaking. If a lance ever does 8+ damage it always dismounts the opponent with an additional 1D2 dmg.

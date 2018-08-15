@@ -1,0 +1,7 @@
+~~~Drive From the Land~~~
+
+"Wyrms are beasts by nature. They must be driven from this land if it is to be tamed from its feral state."
+
+-Saint Straﬂenbauer, Konvention von die Zweite Schism
+
+You gain the ability to turn wild animals. You must take a minus to your level for every point of Int the opponent has above 5. This is effective on all beast based races such as Lizardmen and Dragons but is not effective on werecreatures.

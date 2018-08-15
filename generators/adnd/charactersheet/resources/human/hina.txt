@@ -6,20 +6,6 @@ Minor Sphere: Protection, Wards, Divination
 Favored Weapon: Blowgun, dart, bola, caltrop, Dagger, knife, Main-Gauche, Sap
 Favored Armor: Cloth
 
-The faithful of Hina recognize the Zero-Sum nature of the universe. For every positive event there must be a negative event. You
-kill inorder to eat and to gain money you must take it from someone else. Not necessarily with evil intent, the clergy are evil by
-nature. Recognition of Zero-Sum allows them to cast very powerful spells but with the caviat that the inverse must occur somewhere.
-Most people who are severely down on their luck turn to Hina for aid, usually people in a situation where they would give anything
-in exchange for help. A common exchange would look like this, "Commoner 1 has a deathly sick son, she donates everything she owns 
-for the curch to cure her son. Elsewhere Commoner A prays for the luck to win back his money to pay off his debts. Shortly after he
-wins the lottery but also contracts a deadly illness". Its part of the job of the clergy to actually dissuade people from taking 
-their aid to minimize regrettable, rash decisions. Paladins play a unique role. They are called Plague Bearers and completely conceal
-themselves beneath a set of Plate Armour. In an attempt by the curch to provide a service these paladins accept the diseases that
-are cured. They never recieve the negatives of these diseases but they will live the rest of their lives afflicted. As paladins level 
-up they adorn themselves in progressively more wreathes of flowers to hide the smell of their ill bodies.
+The faithful of Hina recognize the Zero-Sum nature of the universe. For every positive event there must be a negative event. You kill in order to eat and to gain money you must take it from someone else. Not necessarily with evil intent, the clergy are evil by nature. Recognition of Zero-Sum allows them to cast very powerful spells but with the caveat that the inverse must occur somewhere. Most people who are severely down on their luck turn to Hina for aid, usually people in a situation where they would give anything in exchange for help. A common exchange would look like this, "Commoner 1 has a deathly sick son, she donates everything she owns for the church to cure her son. Elsewhere Commoner A prays for the luck to win back his money to pay off his debts. Shortly after he wins the lottery but also contracts a deadly illness". Its part of the job of the clergy to actually dissuade people from taking their aid to minimize regrettable, rash decisions. Paladins play a unique role. They are called Green Knights and completely conceal themselves beneath a set of Plate Armour. In an attempt by the church to provide a service, these paladins accept the diseases that are cured. They never receive the negatives of these diseases but they will live the rest of their lives afflicted. As paladins level  up they adorn themselves in progressively more wreathes of flowers to hide the smell of their ill bodies.
 
-Hina is celebrated at festivals with a feast and extensive ceremonial dance featuring a large amount of spinning. As a cleric to
-progresses in level, Hina provides them more insight to the nature of the universe. Low level clerics teng to have "halucinations"
-of the same event happening twice in two diffrent ways. They see the multiple outcomes of events and at higher levels it becomes much
-more frequent and vivid. Events that take only a few seconds to occur may repeat for minutes for a high level cleric making the cleric's
-progressively less stable. The ceremonial dance supposivly helps relive high level clerics of their visions.
+Hina is celebrated at festivals with a feast and extensive ceremonial dance featuring a large amount of spinning. As a cleric progresses in level, Hina provides them more insight to the nature of the universe. Low level clerics tend to have "hallucinations" of the same event happening twice in two different ways. They see the multiple outcomes of events and at higher levels it becomes much more frequent and vivid. Events that take only a few seconds to occur may repeat for minutes for a high level cleric making the cleric's mind progressively less stable. The ceremonial dance supposedly helps relive high level clerics of their visions.

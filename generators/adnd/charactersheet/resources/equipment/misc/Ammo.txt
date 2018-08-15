@@ -1,0 +1,13 @@
+Arrow, Flight
+Arrow, Sheaf
+Bullet
+Black Powder
+Dart, Barbed
+Dart, Needle
+Dagger
+Hand Axe
+Harpoon
+Javelin
+Quarrel, Hand
+Quarrel, Light
+Quarrel, Heavy

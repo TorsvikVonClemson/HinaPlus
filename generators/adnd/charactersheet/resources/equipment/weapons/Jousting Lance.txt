@@ -1,0 +1,10 @@
+2000
+20
+L
+P
+10
+1D3-1/1D2-1
+Melee
+Reach
+Str
+Str

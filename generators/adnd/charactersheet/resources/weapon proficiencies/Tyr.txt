@@ -1,0 +1,11 @@
+Composite Long Bow
+Composite Short Bow
+Parrying Dagger
+Horseman's Flail
+Heavy Horse Lance
+Light Horse Lance
+Medium Horse Lance
+Halberd
+Long Spear
+Rapier
+Warhammer

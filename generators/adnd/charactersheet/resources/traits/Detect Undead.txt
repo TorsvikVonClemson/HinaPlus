@@ -1,0 +1,3 @@
+~~~Detect Undead~~~
+
+While focusing you can detect Undead within a 60 ft radius.
